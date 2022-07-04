@@ -9,29 +9,17 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="sidebar-brand">
-            <div class="brand-flex">
-                <img src="assets/img/logo.svg">
-                <div class="brand-icons">
-                    <span class="material-icons-outlined">notifications</span>
-                    <span class="material-icons-outlined">account_circle</span>
-                </div>
-            </div>
-        </div>
+        <div class="sidebar-brand"></div>
         <div class="sidebar-main">
-            <div class="sidebar-user">
-                <img src="assets/img/profile.JPG">
-                <div>
-                    <h3>André Gabry</h3>
-                    <span>andre.gabry@icloud.com</span>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="menu-head">
-
-                </div>
-            </div>
+            <div class="sidebar-profile"></div>
+            <div class="sidebar-menu"></div>
         </div>
     </div>
+    <div class="app-content">
+        <header class="app-header"></header>
+        <main class="app-content"></main>
+    </div>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
