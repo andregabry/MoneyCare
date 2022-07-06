@@ -11,11 +11,13 @@ $(function (){
     var menu = "views/menu.php";
     sidebar_menu.load(menu);
 
-    var app_header = $(".app-header");
-    var header = "views/header.php";
-    app_header.load(header);
-
    var app_content = $(".app-content");
    var content = "views/content.php";
    app_content.load(content);
+
+
+   $(".menu-toggle").click(function (){
+       $(".app-sidebar").toggleClass("app-sidebar-mobile");
+       $(".app-main").toggleClass("app-main-mobile");
+   });
 });

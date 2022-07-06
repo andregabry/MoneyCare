@@ -1,0 +1,48 @@
+.app-main{
+    margin-left: 19.5em;
+    transition: 1s ease;
+}
+
+.app-main-mobile{
+    margin-left: 0;
+}
+
+.app-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.2em;
+    height: 4em;
+    box-shadow: 0 2px 4px var(--color-light-grey);
+    border-bottom: 1px solid black;
+}
+
+.menu-toggle label{
+    height: 1.5em;
+    width: 1.5em;
+    font-size: 1.4em;
+    border-radius: var(--radius-round);
+    transition: 300ms;
+    display: grid;
+    place-items: center;
+    color: var(--color-grey);
+}
+
+.app-header label:hover{
+    background-color: var(--color-extra-light-grey);
+}
+
+.header-icons{
+
+}
+
+@media screen and (max-width: 68em){
+    .app-main{
+        margin-left: 0;
+    }
+
+    .app-header{
+        justify-content: flex-end;
+    }
+}
