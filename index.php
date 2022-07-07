@@ -19,14 +19,14 @@
     <header class="app-header">
         <div class="menu-toggle">
             <label>
-                <i class="fa-solid fa-bars-sort"></i>
+                <span class="icon-bars"></span>
             </label>
         </div>
         <div class="header-icons">
-            <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
-            <span class="material-symbols-outlined">search</span>
-            <span class="material-symbols-outlined">bookmark</span>
-            <span class="material-symbols-outlined">sms</span>
+            <span class="icon-bookmark-o"></span>
+            <span class="fa-solid fa-magnifying-glass"></span>
+            <span class="fa-regular fa-bookmark"></span>
+            <span class="fa-regular fa-comment-dots"></span>
         </div>
     </header>
     <main class="app-content"></main>
