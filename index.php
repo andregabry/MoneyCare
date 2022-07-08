@@ -15,10 +15,15 @@
     <!-- BRAND APP -->
 
     <div class="app_header">
-        <img src="assets/img/logo.svg">
+        <div class="header_brand">
+            <img src="assets/img/logo.svg">
+            <h3>MoneyCare</h3>
+        </div>
         <div class="header_icons">
-            <span class="notify_icon icon-bell-o"><small>3</small></span>
-            <span class="icon-ios-contact"></span>
+            <i class="notify_icon icon-bell-o" title="Notificações"><small>3</small></i>
+            <i class="wallet_icon icon-wallet-money" title="Carteiras"></i>
+            <i class="logofo_icon icon-sign-out-1" title="Sair"></i>
+            <i class="menu_icon icon-bars"></i>
         </div>
     </div>
 
@@ -32,28 +37,28 @@
 
             <!-- PROFILE APP -->
 
-            <div class="sidebar-profile">
+            <div class="sidebar_profile">
                 <img src="assets/img/profile.JPG">
                 <div>
                     <h3>André Gabry</h3>
                     <span>andre.gabry@icloud.com</span>
+                </div>
+                <div class="profile_account">
+                    <span>Assinatura FREE</span>
                 </div>
             </div>
 
             <!-- MENU APP -->
 
             <div class="sidebar-menu">
-                <div class="menu-head">
-                    <span>Assinatura FREE</span>
-                </div>
                 <div class="menu-content">
-                    <a href="#"><span class="icon-home"></span>Controle</a>
-                    <a href="#"><span class="icon-briefcase"></span>Carteiras</a>
-                    <a href="#"><span class="icon-calendar-check-o"></span>Receber</a>
-                    <a href="#"><span class="icon-calendar-minus-o"></span>Pagar</a>
-                    <a href="#"><span class="icon-exchange"></span>Fixas</a>
-                    <a href="#"><span class="icon-credit-card"></span>Assinatura</a>
-                    <a href="#"><span class="icon-life-ring"></span>Suporte</a>
+                    <a href="#"><i class="icon-home"></i>Controle</a>
+                    <a href="#"><i class="icon-briefcase"></i>Carteiras</a>
+                    <a href="#"><i class="icon-calendar-check-o"></i>Receber</a>
+                    <a href="#"><i class="icon-calendar-minus-o"></i>Pagar</a>
+                    <a href="#"><i class="icon-exchange"></i>Fixas</a>
+                    <a href="#"><i class="icon-credit-card"></i>Assinatura</a>
+                    <a href="#"><i class="icon-life-ring"></i>Suporte</a>
                 </div>
             </div>
         </div>
@@ -69,9 +74,7 @@
                 <div class="content-header-data">
                     <h1>Bem vindo de volta, André</h1>
                     <small><span class="material-symbols-outlined">circle_notifications</span>Você tem 2 novas mensagens
-                        e
-                        15 novas
-                        tarefas</small>
+                        e 15 novas tarefas</small>
                 </div>
             </div>
         </main>
