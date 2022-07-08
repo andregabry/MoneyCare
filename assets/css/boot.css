@@ -26,7 +26,7 @@
     --weight-bold: 700;
     --weight-black: 900;
 
-
+    --color-background: #f1f5f9;
     --color-default: #65758c;
     --color-grey: #95a4b9;
     --color-light-grey: #c6c8cc;
@@ -60,4 +60,8 @@
     --index-fold: 2;
     --index-menu: 3;
     --index-modal: 4;
+}
+
+img{
+    max-width: 15em;
 }
