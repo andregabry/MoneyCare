@@ -149,8 +149,7 @@
 .sidebar_menu a{
     color: var(--color-light-grey);
     display: block;
-    line-height: 3.5em;
-    padding-left: 1em;
+    padding: 0.8em 1em;
     margin-bottom: 3px;
     border-radius: var(--radius-normal);
     transition: 300ms;
@@ -165,7 +164,7 @@
 
 .sidebar_menu i{
     margin-right: 1.2em;
-    font-size: var(--font-large) !important;
+    font-size: var(--font-medium) !important;
 }
 
 /* APP MAIN */
