@@ -150,6 +150,7 @@
     color: var(--color-light-grey);
     display: block;
     line-height: 3.5em;
+    padding-left: 1em;
     margin-bottom: 3px;
     border-radius: var(--radius-normal);
     transition: 300ms;
