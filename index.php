@@ -48,7 +48,18 @@
             </div>
         </header>
         <main class="app_content">
-<h1>Teste de conteúdo na content do sistema, este teste irá verificar se tudo está ocorrendo normalmente ou terei que ajustar muitas coisas.</h1>
+            <div class="row_large">
+                <article class="card_small">
+                    <div class="row_large">
+                        <i class="far fa-calendar-plus">
+                        <h3>Previsões</h3>
+                    </div>
+                    <div class="row_large">
+                        <p>Salário</p>
+                        <small>Em 26 dias</small>
+                    </div>
+                </article>
+            </div>
         </main>
     </div>
 </div>
