@@ -40,7 +40,7 @@
     </div>
     <div class="app_main">
         <header class="app_header">
-            <i class="fa fa-bars"></i>
+            <i class="menu_toggle fa fa-bars"></i>
             <div>
                 <i class="icon_search fa fa-search"></i>
                 <i class="icon_bookmark far fa-bookmark"></i>
