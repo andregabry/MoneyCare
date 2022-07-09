@@ -19,7 +19,7 @@
                 <i class="icon_profile far fa-user-circle"></i>
             </div>
         </div>
-        <div class="sidebra_user">
+        <div class="sidebar_user">
             <img src="assets/img/profile.JPG">
             <h3>André gabry</h3>
             <span>andre.gabry@icloud.com</span>
