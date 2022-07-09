@@ -178,6 +178,7 @@
     display: block;
     width: calc(100% - 17.5em);
     height: 100%;
+    transition: 300ms;
 }
 
 .app_main_mobile{
