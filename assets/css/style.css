@@ -4,12 +4,16 @@
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 @import "boot.css";
 
+/* APP */
+
 .app{
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
 }
+
+/* SIDEBAR */
 
 .app_sidebar{
     display: block;
@@ -41,6 +45,8 @@
     background-color: #00000080;
 }
 
+/* SIDEBAR BRAND */
+
 .sidebar_brand{
     display: flex;
     flex-direction: row;
@@ -64,6 +70,7 @@
 
 .brand_icons i:hover, .brand_icons i:active{
     background-color: var(--hover-darck-grey);
+    cursor: pointer;
 }
 
 .brand_icons small{
@@ -76,6 +83,8 @@
     top: 4px;
     left: 22px;
 }
+
+/* SIDEBAR USER */
 
 .sidebra_user{
     display: flex;
@@ -90,8 +99,134 @@
     margin-bottom: 1.5em;
 }
 
+.sidebra_user h3{
+    margin-bottom: 0.5em;
+    font-size: var(--font-small);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-extra-light-grey);
+}
+
+.sidebra_user span{
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-grey);
+    margin-bottom: 4.3em;
+    font-size: var(--font-min);
+}
+
+/* SIDEBAR MAP SYSTEM */
+
+.sidebar_map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.sidebar_map span{
+    color: var(--color-purple);
+    text-transform: uppercase;
+    font-size: var(--font-min);
+    margin-bottom: 0.5em;
+    font-weight: var(--weight-semi-bold);
+    padding: 0 1em;
+}
+
+.sidebar_map small{
+    color: rgba(218, 221, 231, 0.51);
+    font-size: 0.6em;
+    text-transform: uppercase;
+    font-weight: var(--weight-semi-bold);
+    margin-bottom: 1.2em;
+    padding: 0 1.4em;
+}
+
+/* SIDEBAR MENU */
+
+.sidebar_menu{
+    display: block;
+}
+
+.sidebar_menu a{
+    color: var(--color-light-grey);
+    display: block;
+    padding: 0.8em 1em;
+    margin-bottom: 3px;
+    border-radius: var(--radius-normal);
+    transition: 300ms;
+    font-size: var(--font-small);
+    font-weight: var(--weight-semi-bold);
+}
+
+.sidebar_menu a:hover, .sidebar_menu a:active{
+    background-color: var(--hover-darck-grey);
+    color: var(--color-extra-light-grey);
+}
+
+.sidebar_menu i{
+    margin-right: 1.2em;
+    font-size: var(--font-medium) !important;
+}
+
+/* APP MAIN */
+
 .app_main {
     display: block;
     width: calc(100% - 17.5em);
     height: 100%;
+}
+
+/* APP HEADER */
+
+.app_header{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    padding: 0.6em 1em;
+    background-color: var(--color-white);
+    box-shadow: 0 1px 2px var(--color-light-grey);
+}
+
+.app_header i{
+    font-size: var(--font-medium);
+    color: var(--color-default);
+    border-radius: var(--radius-round);
+    padding: 0.6em;
+    transition: 300ms;
+}
+
+.app_header i:hover{
+    background-color: var(--color-extra-light-grey);
+    cursor: pointer;
+}
+
+/* APP CONTENT */
+
+.app_content{
+    display: block;
+    width: 100%;
+    height: calc(100% - 4em);
+    padding: 1.5em 2em;
+    background-color: var(--color-background);
+    overflow-y: auto;
+}
+
+.app_content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.app_content::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.app_content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #00000080;
 }

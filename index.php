@@ -24,6 +24,10 @@
             <h3>André gabry</h3>
             <span>andre.gabry@icloud.com</span>
         </div>
+        <div class="sidebar_map">
+            <span>Dashboard</span>
+            <small>Visão geral do sistema</small>
+        </div>
         <div class="sidebar_menu">
             <a href="#" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
             <a href="#" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
@@ -37,14 +41,14 @@
     <div class="app_main">
         <header class="app_header">
             <i class="fa fa-bars"></i>
-            <div class="header_icon">
+            <div>
                 <i class="icon_search fa fa-search"></i>
                 <i class="icon_bookmark far fa-bookmark"></i>
                 <i class="icon_comment far fa-comment-dots"></i>
             </div>
         </header>
         <main class="app_content">
-
+<h1>Teste de conteúdo na content do sistema, este teste irá verificar se tudo está ocorrendo normalmente ou terei que ajustar muitas coisas.</h1>
         </main>
     </div>
 </div>

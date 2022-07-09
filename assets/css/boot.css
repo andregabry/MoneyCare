@@ -11,9 +11,10 @@
 
 /*VARIABLES*/
 :root {
+    --font-min: 0.8em;
     --font-small: 0.875em;
     --font-normal: 1em;
-    --font-medium: 1.5em;
+    --font-medium: 1.2em;
     --font-large: 1.8em;
 
 
@@ -34,7 +35,7 @@
     --color-darck-grey: #11192c;
     --color-darck-green: #0f9589;
     --color-darck-blue: #5047e5;
-    --color-purple: #828dd7;
+    --color-purple: #818cf8;
     --color-white: #fff;
     --color-green: #24c55f;
     --color-blue: #3d83f6;
@@ -50,7 +51,7 @@
     --hover-duration: 0.3s;
 
 
-    --radius-normal: 5px;
+    --radius-normal: 6px;
     --radius-medium: 10px;
     --radius-large: 20px;
     --radius-round: 50%;
