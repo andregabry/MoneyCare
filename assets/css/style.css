@@ -1,75 +1,97 @@
 @import url("https://file.myfontastic.com/y9E97ar3hSy2MDxDt2GYiE/icons.css");
+@import "../plugins/fontawesome/css/all.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 @import "boot.css";
 
-
 .app{
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
     height: 100%;
-    background-color: var(--color-background);
-}
-
-.app_header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    height: 4em;
-    padding: 0 2em;
-    background-color: var(--color-white);
-    box-shadow: 0 1px 2px var(--color-light-grey);
 }
 
-.header_brand{
+.app_sidebar{
+    display: block;
+    width: 17.5em;
+    height: 100%;
+    padding: 1.2em 1.5em;
+    background-color: var(--color-darck-grey);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    overflow-y: auto;
+    transition: 300ms;
+}
+
+.app_sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.app_sidebar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.app_sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #00000080;
+}
+
+.sidebar_brand{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
 }
 
-.header_brand h3{
-    font-size: var(--font-medium);
-    margin-left: 1em;
-    color: var(--color-default);
+.brand_icons{
+    color: var(--color-grey);
 }
 
-.header_icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header_icons i{
-    font-size: var(--font-medium);
-    color: var(--color-default);
-}
-
-.notify_icon, .wallet_icon{
+.brand_icons i{
+    font-size: 1.3em;
+    vertical-align: middle;
     position: relative;
-    margin-right: 1em;
-}
-
-.notify_icon small{
-    position: absolute;
-    background-color: var(--color-dark-green);
-    padding: 2px 6px;
-    color: var(--color-white);
     border-radius: var(--radius-round);
-    font-size: 0.5em;
-    left: 13px;
-    top: -5px;
+    padding: 9px 11px;
+    transition: 300ms;
 }
 
-.app-main{
+.brand_icons i:hover, .brand_icons i:active{
+    background-color: var(--hover-darck-grey);
+}
+
+.brand_icons small{
+    color: var(--color-white);
+    position: absolute;
+    font-size: 0.6em;
+    padding: 0 4px;
+    border-radius: var(--radius-round);
+    background-color: var(--color-darck-green);
+    top: 4px;
+    left: 22px;
+}
+
+.sidebra_user{
     display: flex;
-    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.sidebra_user img{
+    border-radius: var(--radius-round);
+    width: 5.5em;
+    margin-bottom: 1.5em;
+}
 
-
-
-
+.app_main {
+    display: block;
+    width: calc(100% - 17.5em);
+    height: 100%;
+}

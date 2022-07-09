@@ -32,7 +32,7 @@
     --color-light-grey: #c6c8cc;
     --color-extra-light-grey: #ecedef;
     --color-darck-grey: #11192c;
-    --color-dark-green: #0f9589;
+    --color-darck-green: #0f9589;
     --color-darck-blue: #5047e5;
     --color-purple: #828dd7;
     --color-white: #fff;
@@ -55,6 +55,7 @@
     --radius-large: 20px;
     --radius-round: 50%;
 
+    --box-shadow: 0 1px 3px 0 var(--color-extra-light-grey);
 
     --index-back: -1;
     --index-fold: 2;
@@ -62,6 +63,17 @@
     --index-modal: 4;
 }
 
+html, body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
 img{
     max-width: 15em;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }

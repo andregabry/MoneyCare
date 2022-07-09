@@ -11,75 +11,45 @@
 
 
 <div class="app">
-
-    <!-- BRAND APP -->
-
-    <div class="app_header">
-        <div class="header_brand">
+    <div class="app_sidebar">
+        <div class="sidebar_brand">
             <img src="assets/img/logo.svg">
-            <h3>MoneyCare</h3>
+            <div class="brand_icons">
+                <i class="icon_notify icon-bell-o"><small>3</small></i>
+                <i class="icon_profile far fa-user-circle"></i>
+            </div>
         </div>
-        <div class="header_icons">
-            <i class="notify_icon icon-bell-o" title="Notificações"><small>3</small></i>
-            <i class="wallet_icon icon-wallet-money" title="Carteiras"></i>
-            <i class="logofo_icon icon-sign-out-1" title="Sair"></i>
-            <i class="menu_icon icon-bars"></i>
+        <div class="sidebra_user">
+            <img src="assets/img/profile.JPG">
+            <h3>André gabry</h3>
+            <span>andre.gabry@icloud.com</span>
+        </div>
+        <div class="sidebar_menu">
+            <a href="#" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
+            <a href="#" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
+            <a href="#" title="Receber"><i class="far fa-calendar-plus"></i> Receber</a>
+            <a href="#" title="Pagar"><i class="far fa-calendar-minus"></i> Pagar</a>
+            <a href="#" title="Fixas"><i class="fas fa-people-arrows"></i> Fixas</a>
+            <a href="#" title="Assinatura"><i class="fas fa-file-signature"></i> Assinatura</a>
+            <a href="#" title="Suporte"><i class="fas fa-medkit"></i> Suporte</a>
         </div>
     </div>
-
-    <!-- CONTENT APP -->
-
-    <div class="app-main">
-
-        <!-- SIDEBAR APP -->
-
-        <div class="app-sidebar">
-
-            <!-- PROFILE APP -->
-
-            <div class="sidebar_profile">
-                <img src="assets/img/profile.JPG">
-                <div>
-                    <h3>André Gabry</h3>
-                    <span>andre.gabry@icloud.com</span>
-                </div>
-                <div class="profile_account">
-                    <span>Assinatura FREE</span>
-                </div>
+    <div class="app_main">
+        <header class="app_header">
+            <i class="fa fa-bars"></i>
+            <div class="header_icon">
+                <i class="icon_search fa fa-search"></i>
+                <i class="icon_bookmark far fa-bookmark"></i>
+                <i class="icon_comment far fa-comment-dots"></i>
             </div>
+        </header>
+        <main class="app_content">
 
-            <!-- MENU APP -->
-
-            <div class="sidebar-menu">
-                <div class="menu-content">
-                    <a href="#"><i class="icon-home"></i>Controle</a>
-                    <a href="#"><i class="icon-briefcase"></i>Carteiras</a>
-                    <a href="#"><i class="icon-calendar-check-o"></i>Receber</a>
-                    <a href="#"><i class="icon-calendar-minus-o"></i>Pagar</a>
-                    <a href="#"><i class="icon-exchange"></i>Fixas</a>
-                    <a href="#"><i class="icon-credit-card"></i>Assinatura</a>
-                    <a href="#"><i class="icon-life-ring"></i>Suporte</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTENT APP -->
-
-
-        <main class="app-content">
-            <div class="row">
-                <div class="content-header-profile">
-                    <img src="assets/img/profile.JPG" alt="André Gabry">
-                </div>
-                <div class="content-header-data">
-                    <h1>Bem vindo de volta, André</h1>
-                    <small><span class="material-symbols-outlined">circle_notifications</span>Você tem 2 novas mensagens
-                        e 15 novas tarefas</small>
-                </div>
-            </div>
         </main>
     </div>
 </div>
+
+
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
