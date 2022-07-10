@@ -139,4 +139,18 @@ img{
     box-shadow: 0 1px 3px var(--color-light-grey);
     padding: 1em;
     border-radius: var(--radius-medium);
+    margin-bottom: 1.5em;
+}
+
+.column_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.column_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }

@@ -49,16 +49,47 @@
         </header>
         <main class="app_content">
             <div class="row_large">
-                <article class="card_small">
-                    <div class="row_large">
-                        <i class="far fa-calendar-plus">
-                        <h3>Previsões</h3>
-                    </div>
-                    <div class="row_large">
-                        <p>Salário</p>
-                        <small>Em 26 dias</small>
-                    </div>
-                </article>
+                <div class="column_left">
+                    <article class="receive card_large">
+                        <div class="receive_header row_large">
+                            <i class="far fa-calendar-plus"></i>
+                            <h3>A receber:</h3>
+                        </div>
+                        <div class="receive_main row_large">
+                            <div class="column_left">
+                                <p>Salário</p>
+                                <small>Em 26 dias</small>
+                            </div>
+                            <div class="column_right">
+                                <p>R$ 1.000,00</p>
+                                <i class="far fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <div class="receive_footer row_large">
+                            <p>+ Receitas</p>
+                        </div>
+                    </article>
+
+                    <article class="spend card_large">
+                        <div class="spend_header row_large">
+                            <i class="far fa-calendar-minus"></i>
+                            <h3>A pagar:</h3>
+                        </div>
+                        <div class="spend_main row_large">
+                            <div class="column_left">
+                                <p>Salário</p>
+                                <small>Em 26 dias</small>
+                            </div>
+                            <div class="column_right">
+                                <p>R$ 1.000,00</p>
+                                <i class="far fa-thumbs-up"></i>
+                            </div>
+                        </div>
+                        <div class="spend_footer row_large">
+                            <p>+ Receitas</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </main>
     </div>
