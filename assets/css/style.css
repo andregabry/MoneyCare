@@ -219,7 +219,7 @@
     display: block;
     width: 100%;
     height: calc(100% - 4em);
-    padding: 1.5em 2em;
+    padding-top: 8px;
     background-color: var(--color-background);
     overflow-y: auto;
 }
@@ -241,7 +241,7 @@
     background-color: #00000080;
 }
 
-/* GRAFY */
+/* GRAPHIC */
 
 .graphic{
     width: 100%;

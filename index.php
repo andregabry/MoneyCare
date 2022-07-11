@@ -71,7 +71,7 @@
             spacingTop: 5,
             spacingLeft: 0,
             spacingRight: 0,
-            height: '360px'
+            height: (9 / 16 * 100) + '%'
         },
         title: null,
         xAxis: {

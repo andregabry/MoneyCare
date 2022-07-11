@@ -53,7 +53,7 @@
             </article>
         </div>
 
-        <div class="row_baseline">
+        <div class="row">
             <article class="balance card_large">
                 <div class="balance_header">
                     <p><i class="fas fa-wallet"></i>Balanço</p>
