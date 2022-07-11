@@ -441,6 +441,18 @@
     font-weight: var(--weight-medium);
 }
 
-@media screen and (max-width: 90em){
+@media screen and (max-width: 60em){
+    .app_sidebar{
+        margin-left: -17.5em;
+        position: absolute;
+        z-index: var(--index-modal);
+    }
 
+    .app_sidebar_mobile{
+        margin-left: 0;
+    }
+
+    .app_main{
+        width: 100%;
+    }
 }
