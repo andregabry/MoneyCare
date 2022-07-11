@@ -48,55 +48,65 @@
             </div>
         </header>
         <main class="app_content">
-            <div class="row_large">
-                <div class="column_left">
-                    <article class="receive card_large">
-                        <div class="receive_header row_large">
-                            <i class="far fa-calendar-plus"></i>
-                            <h3>A receber:</h3>
-                        </div>
-                        <div class="receive_main row_large">
-                            <div class="column_left">
-                                <p>Salário</p>
-                                <small>Em 26 dias</small>
-                            </div>
-                            <div class="column_right">
-                                <p>R$ 1.000,00</p>
-                                <i class="far fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="receive_footer row_large">
-                            <p>+ Receitas</p>
-                        </div>
-                    </article>
-
-                    <article class="spend card_large">
-                        <div class="spend_header row_large">
-                            <i class="far fa-calendar-minus"></i>
-                            <h3>A pagar:</h3>
-                        </div>
-                        <div class="spend_main row_large">
-                            <div class="column_left">
-                                <p>Salário</p>
-                                <small>Em 26 dias</small>
-                            </div>
-                            <div class="column_right">
-                                <p>R$ 1.000,00</p>
-                                <i class="far fa-thumbs-up"></i>
-                            </div>
-                        </div>
-                        <div class="spend_footer row_large">
-                            <p>+ Receitas</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            <?php include __DIR__ . "/views/dashboard.php"?>
         </main>
     </div>
 </div>
 
 
 <script src="assets/js/jquery.js"></script>
+<script src="assets/js/highcharts.js"></script>
+<script>
+
+    Highcharts.setOptions({
+        lang: {
+            decimalPoint: ',',
+            thousandsSep: '.'
+        }
+    });
+    Highcharts.chart('control', {
+        chart: {
+            type: 'areaspline',
+            spacingBottom: 0,
+            spacingTop: 5,
+            spacingLeft: 0,
+            spacingRight: 0,
+            height: '360px'
+        },
+        title: null,
+        xAxis: {
+            categories: ["Jan", "Fev", "Mar", "Abr", "Mai"]
+        },
+        yAxis: {
+            title: null,
+        },
+        tooltip: {
+            shared: true,
+            valueDecimals: 2,
+            valuePrefix: 'R$ '
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                fillOpacity: 0.5
+            }
+        },
+        series: [{
+            name: 'Receitas',
+            data: [3,1,5,6,9],
+            color: '#0f9589',
+            lineColor: '#15afa5'
+        }, {
+            name: 'Despesas',
+            data: [4,7,0,3,10],
+            color: '#cc3838',
+            lineColor: '#ea7d7d'
+        }]
+    });
+
+</script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

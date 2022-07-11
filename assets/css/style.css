@@ -83,7 +83,7 @@
     font-size: 0.6em;
     padding: 0 4px;
     border-radius: var(--radius-round);
-    background-color: var(--color-darck-green);
+    background-color: var(--color-green);
     top: 4px;
     left: 22px;
 }
@@ -241,25 +241,183 @@
     background-color: #00000080;
 }
 
-/* CARD RECEIVE */
+/* GRAFY */
 
-.receive_header{
+.graphic{
+    width: 100%;
+    height: 100%;
+}
+
+.graphic header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    line-height: 3em;
+    color: var(--color-default);
+}
+
+.graphic{
+    height: 100%;
+}
+
+.graphic header i{
+    margin-right: 1em;
+}
+
+/* CARD RECEIVE AND SPEND */
+
+.receive_header, .spend_header{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     line-height: 3em;
     border-bottom: 1px solid var(--color-extra-light-grey);
+    color: var(--color-default);
 }
 
-.receive_main{
+.receive_header i, .spend_header i{
+    margin-right: 1em;
+}
+
+.receive_main, .spend_main{
     line-height: 3em;
-    border-bottom: 1px solid var(--color-default);
+    border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.receive_footer{
+.receive_title p{
+    font-size: var(--font-normal);
+    color: var(--color-green);
+    font-weight: var(--weight-bold);
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+.receive_title small{
+    color: var(--color-default);
+    font-size: var(--font-small);
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+
+.receive_main, .spend_main{
+    padding: 1.275em 0;
+}
+
+.receive_value p{
+    font-size: var(--font-normal);
+    color: var(--color-darck-grey);
+    font-weight: var(--weight-bold);
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+.receive_value i{
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+.receive_value i:hover{
+    color: var(--color-green);
+}
+
+.spend_title p{
+    font-size: var(--font-normal);
+    color: var(--color-green);
+    font-weight: var(--weight-bold);
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+.spend_title small{
+    color: var(--color-default);
+    font-size: var(--font-small);
+    line-height: 1em;
+    margin: 0 0 1em 0;
+}
+
+.spend_value p{
+    font-size: var(--font-normal);
+    color: var(--color-darck-grey);
+    font-weight: var(--weight-bold);
+    line-height: 1em;
+    margin-top: 1em;
+}
+
+.spend_value i{
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+.spend_value i:hover{
+    color: var(--hover-color-red);
+}
+
+.receive_footer, .spend_footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     line-height: 3em;
+}
+
+.receive_footer p, .spend_footer p{
+    color: var(--color-default);
+    font-weight: var(--weight-semi-bold);
+}
+
+.receive_footer p:hover, .spend_footer p:hover{
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+/* BALANCE */
+
+.balance{
+    position: relative;
+}
+
+.balance_header{
+    line-height: 3em;
+    color: var(--color-default);
+    font-weight: var(--weight-semi-bold);
+    font-size: var(--font-medium);
+    border-bottom: 1px solid var(--color-extra-light-grey);
+}
+
+.balance_header i{
+    margin-right: 1em;
+}
+
+.balance_main{
+    line-height: 1em;
+}
+
+.balance_general, .balance_receive, .balance_spend{
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+.balance_general h3{
+    color: var(--color-green);
+}
+
+.balance_receive h3{
+    color: var(--color-green);
+}
+
+.balance_spend h3{
+    color: var(--color-red);
+}
+
+.balance_general i, .balance_receive i, .balance_spend i{
+    margin-right: 1em;
+}
+
+.balance_general p, .balance_receive p, .balance_spend p{
+    line-height: 2em;
+}
+
+@media screen and (max-width: 90em){
+
 }
