@@ -375,6 +375,15 @@
 
 .balance{
     position: relative;
+    overflow: hidden;
+}
+
+.back_icon{
+    position: absolute;
+    font-size: 5em;
+    color: rgba(15, 149, 137, 0.32);
+    left: 86%;
+    top: 76%;
 }
 
 .balance_header{
@@ -393,7 +402,19 @@
     line-height: 1em;
 }
 
-.balance_general, .balance_receive, .balance_spend{
+.balance_general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: var(--radius-normal);
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid var(--color-green);
+    color: var(--color-default);
+}
+
+.balance_receive, .balance_spend{
     line-height: 2em;
     margin-top: 1em;
 }
@@ -416,6 +437,8 @@
 
 .balance_general p, .balance_receive p, .balance_spend p{
     line-height: 2em;
+    color: var(--color-default);
+    font-weight: var(--weight-medium);
 }
 
 @media screen and (max-width: 90em){

@@ -33,6 +33,7 @@
             </article>
 
             <article class="spend card_small">
+                <i class="far fa-exclamation-circle"></i>
                 <div class="spend_header row_medium">
                     <i class="far fa-calendar-minus"></i>
                     <h3>A pagar:</h3>
@@ -55,14 +56,15 @@
 
         <div class="row">
             <article class="balance card_large">
+                <i class="back_icon far fa-check-circle"></i>
                 <div class="balance_header">
                     <p><i class="fas fa-wallet"></i>Balanço</p>
                 </div>
+                <div class="balance_general">
+                    <h3><i class="far fa-money-bill-alt"></i>Saldo geral</h3>
+                    <p>R$ 2350,00</p>
+                </div>
                 <div class="balance_main row_medium">
-                    <div class="balance_general column_small">
-                        <h3><i class="far fa-money-bill-alt"></i>Saldo geral</h3>
-                        <p>R$ 2350,00</p>
-                    </div>
                     <div class="balance_receive column_small">
                         <h3><i class="far fa-calendar-plus"></i>Receitas</h3>
                         <p>R$ + 6000,00</p>
