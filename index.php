@@ -11,7 +11,7 @@
 
 
 <div class="app">
-    <div class="app_sidebar">
+    <div class="app_sidebar" data-mobilemenu="close">
         <div class="sidebar_brand">
             <img src="assets/img/logo.svg">
             <div class="brand_icons">
@@ -40,8 +40,8 @@
     </div>
     <div class="app_main">
         <header class="app_header">
-            <i class="menu_toggle fa fa-bars"></i>
-            <div>
+            <i class="menu_toggle fa fa-bars" data-mobilemenu="open"></i>
+            <div class="">
                 <i class="icon_search fa fa-search"></i>
                 <i class="icon_bookmark far fa-bookmark"></i>
                 <i class="icon_comment far fa-comment-dots"></i>
@@ -70,8 +70,8 @@
             spacingBottom: 0,
             spacingTop: 5,
             spacingLeft: 0,
-            spacingRight: 0,
-            height: (9 / 16 * 100) + '%'
+            spacingRight: 5,
+            height:  '400px'
         },
         title: null,
         xAxis: {

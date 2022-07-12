@@ -213,6 +213,11 @@
     cursor: pointer;
 }
 
+.menu_toggle{
+    margin-left: 0;
+    transition: 600ms ease;
+}
+
 /* APP CONTENT */
 
 .app_content{
@@ -255,6 +260,10 @@
     justify-content: start;
     line-height: 3em;
     color: var(--color-default);
+}
+
+.graphic_content{
+    width: 90%;
 }
 
 .graphic{
@@ -381,7 +390,7 @@
 .back_icon{
     position: absolute;
     font-size: 5em;
-    color: rgba(15, 149, 137, 0.32);
+    color: rgba(15, 149, 137, 0.1);
     left: 86%;
     top: 76%;
 }
@@ -454,5 +463,9 @@
 
     .app_main{
         width: 100%;
+    }
+
+    .menu_toggle_mobile{
+        margin-left: 14.5em;
     }
 }

@@ -2,9 +2,8 @@ $(function (){
     $(".menu_toggle").click(function (){
         $(".app_sidebar").toggleClass("app_sidebar_mobile");
         $(".app_main").toggleClass("app_main_mobile");
+        $(this).toggleClass("menu_toggle_mobile");
+        $(this).siblings().slideToggle(300);
     });
 
-    $(".app_sidebar").parent().click(function (){
-
-    });
 });

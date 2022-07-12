@@ -5,12 +5,10 @@
                 <header>
                     <h3><i class="fas fa-chart-bar"></i> Controle</h3>
                 </header>
-                <div class="graphic_content" id="control"></div>
+                <div class="graphic_content" id="controle"></div>
             </div>
         </article>
-    </div>
 
-    <div class="column_left">
         <div class="row">
             <article class="receive card_small">
                 <div class="receive_header row_medium">
@@ -33,7 +31,6 @@
             </article>
 
             <article class="spend card_small">
-                <i class="far fa-exclamation-circle"></i>
                 <div class="spend_header row_medium">
                     <i class="far fa-calendar-minus"></i>
                     <h3>A pagar:</h3>
@@ -53,6 +50,10 @@
                 </div>
             </article>
         </div>
+    </div>
+
+    <div class="column_left">
+
 
         <div class="row">
             <article class="balance card_large">
@@ -65,11 +66,11 @@
                     <p>R$ 2350,00</p>
                 </div>
                 <div class="balance_main row_medium">
-                    <div class="balance_receive column_small">
+                    <div class="balance_receive column_left">
                         <h3><i class="far fa-calendar-plus"></i>Receitas</h3>
                         <p>R$ + 6000,00</p>
                     </div>
-                    <div class="balance_spend column_small">
+                    <div class="balance_spend column_right">
                         <h3><i class="far fa-calendar-minus"></i>Despesas</h3>
                         <p>R$ - 3650,00,00</p>
                     </div>
