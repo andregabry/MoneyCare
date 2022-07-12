@@ -1,14 +1,15 @@
 <div class="row">
     <div class="column_left">
+        <div class="row">
         <article class="graphic card_large">
             <div class="graphic_main">
                 <header>
                     <h3><i class="fas fa-chart-bar"></i> Controle</h3>
                 </header>
-                <div class="graphic_content" id="controle"></div>
+                <div class="graphic_content" id="control"></div>
             </div>
         </article>
-
+        </div>
         <div class="row">
             <article class="receive card_small">
                 <div class="receive_header row_medium">
@@ -52,8 +53,15 @@
         </div>
     </div>
 
-    <div class="column_left">
-
+    <div class="column_right">
+        <div class="row">
+            <article class="more_receive card">
+                <p><i class="fas fa-plus-circle"></i>Receitas</p>
+            </article>
+            <article class="more_spend card">
+                <p><i class="fas fa-plus-circle"></i>Despesas</p>
+            </article>
+        </div>
 
         <div class="row">
             <article class="balance card_large">
@@ -79,3 +87,55 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    Highcharts.setOptions({
+        lang: {
+            decimalPoint: ',',
+            thousandsSep: '.'
+        }
+    });
+    Highcharts.chart('control', {
+        chart: {
+            type: 'areaspline',
+            spacingBottom: 0,
+            spacingTop: 5,
+            spacingLeft: 0,
+            spacingRight: 5,
+            height: (9 /16 * 100) + '%',
+        },
+        title: null,
+        xAxis: {
+            categories: ["Jan", "Fev", "Mar", "Abr", "Mai"]
+        },
+        yAxis: {
+            title: null,
+        },
+        tooltip: {
+            shared: true,
+            valueDecimals: 2,
+            valuePrefix: 'R$ '
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                fillOpacity: 0.5
+            }
+        },
+        series: [{
+            name: 'Receitas',
+            data: [3,1,5,6,9],
+            color: '#0f9589',
+            lineColor: '#15afa5'
+        }, {
+            name: 'Despesas',
+            data: [4,7,0,3,10],
+            color: '#cc3838',
+            lineColor: '#ea7d7d'
+        }]
+    });
+
+</script>

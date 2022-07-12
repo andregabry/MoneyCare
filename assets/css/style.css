@@ -72,7 +72,7 @@
     transition: 300ms;
 }
 
-.brand_icons i:hover, .brand_icons i:active{
+.brand_icons i:hover, .brand_icons i.active{
     background-color: var(--hover-darck-grey);
     cursor: pointer;
 }
@@ -162,7 +162,7 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.sidebar_menu a:hover, .sidebar_menu a:active{
+.sidebar_menu a:hover, .sidebar_menu a.active{
     background-color: var(--hover-darck-grey);
     color: var(--color-extra-light-grey);
 }
@@ -208,7 +208,7 @@
     transition: 300ms;
 }
 
-.app_header i:hover{
+.app_header i:hover, .app_header i.active{
     background-color: var(--color-extra-light-grey);
     cursor: pointer;
 }
@@ -224,7 +224,7 @@
     display: block;
     width: 100%;
     height: calc(100% - 4em);
-    padding-top: 8px;
+    padding: 1.5em 1em;
     background-color: var(--color-background);
     overflow-y: auto;
 }
@@ -246,6 +246,12 @@
     background-color: #00000080;
 }
 
+.app_content_load{
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+
 /* GRAPHIC */
 
 .graphic{
@@ -253,7 +259,7 @@
     height: 100%;
 }
 
-.graphic header{
+.graphic_main header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -262,16 +268,16 @@
     color: var(--color-default);
 }
 
-.graphic_content{
-    width: 90%;
+.graphic_main header h3{
+    font-size: var(--font-normal);
 }
 
-.graphic{
-    height: 100%;
-}
-
-.graphic header i{
+.graphic_main header i{
     margin-right: 1em;
+}
+
+.graphic_content{
+    width: 100%;
 }
 
 /* CARD RECEIVE AND SPEND */
@@ -286,17 +292,20 @@
     color: var(--color-default);
 }
 
+.receive_header h3, .spend_header h3{
+    font-size: var(--font-normal);
+}
+
 .receive_header i, .spend_header i{
     margin-right: 1em;
 }
 
 .receive_main, .spend_main{
-    line-height: 3em;
-    border-bottom: 1px solid var(--color-extra-light-grey);
+
 }
 
 .receive_title p{
-    font-size: var(--font-normal);
+    font-size: var(--font-small);
     color: var(--color-green);
     font-weight: var(--weight-bold);
     line-height: 1em;
@@ -305,7 +314,7 @@
 
 .receive_title small{
     color: var(--color-default);
-    font-size: var(--font-small);
+    font-size: var(--font-min);
     line-height: 1em;
     margin: 0 0 1em 0;
 }
@@ -315,7 +324,7 @@
 }
 
 .receive_value p{
-    font-size: var(--font-normal);
+    font-size: var(--font-small);
     color: var(--color-darck-grey);
     font-weight: var(--weight-bold);
     line-height: 1em;
@@ -328,11 +337,11 @@
 }
 
 .receive_value i:hover{
-    color: var(--color-green);
+    color: var(--hover-color-green);
 }
 
 .spend_title p{
-    font-size: var(--font-normal);
+    font-size: var(--font-small);
     color: var(--color-green);
     font-weight: var(--weight-bold);
     line-height: 1em;
@@ -341,13 +350,13 @@
 
 .spend_title small{
     color: var(--color-default);
-    font-size: var(--font-small);
+    font-size: var(--font-min);
     line-height: 1em;
     margin: 0 0 1em 0;
 }
 
 .spend_value p{
-    font-size: var(--font-normal);
+    font-size: var(--font-small);
     color: var(--color-darck-grey);
     font-weight: var(--weight-bold);
     line-height: 1em;
@@ -368,16 +377,55 @@
     flex-direction: row;
     justify-content: center;
     line-height: 3em;
+    border-top: 1px solid var(--color-extra-light-grey);
 }
 
 .receive_footer p, .spend_footer p{
     color: var(--color-default);
-    font-weight: var(--weight-semi-bold);
+    font-weight: var(--weight-medium);
 }
 
 .receive_footer p:hover, .spend_footer p:hover{
     color: var(--color-green);
     cursor: pointer;
+}
+
+/* MORE RECEIVE | SPEND */
+
+.more_receive{
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.more_receive:hover{
+    cursor: pointer;
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.more_receive i{
+    margin-right: 0.3em;
+}
+
+.more_spend{
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.more_spend:hover{
+    cursor: pointer;
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.more_spend i{
+    margin-right: 0.3em;
 }
 
 /* BALANCE */
@@ -399,7 +447,7 @@
     line-height: 3em;
     color: var(--color-default);
     font-weight: var(--weight-semi-bold);
-    font-size: var(--font-medium);
+    font-size: var(--font-normal);
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
@@ -418,8 +466,8 @@
     align-items: center !important;
     border-radius: var(--radius-normal);
     margin-top: 1em;
-    padding: 1em;
-    border: 2px solid var(--color-green);
+    padding: 0.5em;
+    border: 1px solid var(--color-green);
     color: var(--color-default);
 }
 
@@ -429,14 +477,18 @@
 }
 
 .balance_general h3{
+    font-size: var(--font-normal);
+    margin-bottom: 0.5em;
     color: var(--color-green);
 }
 
 .balance_receive h3{
+    font-size: var(--font-small);
     color: var(--color-green);
 }
 
 .balance_spend h3{
+    font-size: var(--font-small);
     color: var(--color-red);
 }
 
@@ -445,12 +497,13 @@
 }
 
 .balance_general p, .balance_receive p, .balance_spend p{
-    line-height: 2em;
+    line-height: 1em;
+    font-size: var(--font-small);
     color: var(--color-default);
     font-weight: var(--weight-medium);
 }
 
-@media screen and (max-width: 60em){
+@media screen and (max-width: 44em){
     .app_sidebar{
         margin-left: -17.5em;
         position: absolute;

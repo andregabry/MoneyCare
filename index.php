@@ -29,26 +29,24 @@
             <small>Visão geral do sistema</small>
         </div>
         <div class="sidebar_menu">
-            <a href="#" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
-            <a href="#" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
-            <a href="#" title="Receber"><i class="far fa-calendar-plus"></i> Receber</a>
-            <a href="#" title="Pagar"><i class="far fa-calendar-minus"></i> Pagar</a>
-            <a href="#" title="Fixas"><i class="fas fa-people-arrows"></i> Fixas</a>
-            <a href="#" title="Assinatura"><i class="fas fa-file-signature"></i> Assinatura</a>
-            <a href="#" title="Suporte"><i class="fas fa-medkit"></i> Suporte</a>
+            <a class="j_load active" href="dashboard" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
+            <a class="j_load" href="wallets" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
+            <a class="j_load" href="receive" title="Receber"><i class="far fa-calendar-plus"></i> Receber</a>
+            <a class="j_load" href="spend" title="Pagar"><i class="far fa-calendar-minus"></i> Pagar</a>
+            <a class="j_load" href="fixed" title="Fixas"><i class="fas fa-people-arrows"></i> Fixas</a>
+            <a class="j_load" href="signature" title="Assinatura"><i class="fas fa-file-signature"></i> Assinatura</a>
+            <a class="j_load" href="support" title="Suporte"><i class="fas fa-medkit"></i> Suporte</a>
         </div>
     </div>
     <div class="app_main">
         <header class="app_header">
             <i class="menu_toggle fa fa-bars" data-mobilemenu="open"></i>
             <div class="">
-                <i class="icon_search fa fa-search"></i>
-                <i class="icon_bookmark far fa-bookmark"></i>
-                <i class="icon_comment far fa-comment-dots"></i>
+                <i class="fas fa-wallet"></i>
             </div>
         </header>
         <main class="app_content">
-            <?php include __DIR__ . "/views/dashboard.php"?>
+            <img class="app_content_load" src="assets/img/load.gif" alt="Carregando" title="Carregando"/>
         </main>
     </div>
 </div>
@@ -56,57 +54,6 @@
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/highcharts.js"></script>
-<script>
-
-    Highcharts.setOptions({
-        lang: {
-            decimalPoint: ',',
-            thousandsSep: '.'
-        }
-    });
-    Highcharts.chart('control', {
-        chart: {
-            type: 'areaspline',
-            spacingBottom: 0,
-            spacingTop: 5,
-            spacingLeft: 0,
-            spacingRight: 5,
-            height:  '400px'
-        },
-        title: null,
-        xAxis: {
-            categories: ["Jan", "Fev", "Mar", "Abr", "Mai"]
-        },
-        yAxis: {
-            title: null,
-        },
-        tooltip: {
-            shared: true,
-            valueDecimals: 2,
-            valuePrefix: 'R$ '
-        },
-        credits: {
-            enabled: false
-        },
-        plotOptions: {
-            areaspline: {
-                fillOpacity: 0.5
-            }
-        },
-        series: [{
-            name: 'Receitas',
-            data: [3,1,5,6,9],
-            color: '#0f9589',
-            lineColor: '#15afa5'
-        }, {
-            name: 'Despesas',
-            data: [4,7,0,3,10],
-            color: '#cc3838',
-            lineColor: '#ea7d7d'
-        }]
-    });
-
-</script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
