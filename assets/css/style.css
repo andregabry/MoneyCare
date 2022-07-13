@@ -61,10 +61,27 @@
 }
 
 .brand_icons{
+    position: relative;
     color: var(--color-grey);
 }
 
-.brand_icons i{
+.profile{
+    position: fixed;
+    background-color: var(--color-white);
+    border-radius: var(--radius-medium);
+    padding: 1.5em;
+}
+
+.profile_header{
+    line-height: 4em;
+}
+
+.profile_header img{
+    width: 3em;
+    border-radius: var(--radius-round);
+}
+
+.icon_notify, .icon_profile{
     font-size: 1.3em;
     vertical-align: middle;
     position: relative;
@@ -73,7 +90,7 @@
     transition: 300ms;
 }
 
-.brand_icons i:hover, .brand_icons i.active{
+.icon_notify:hover, .icon_profile:hover, .icon_profile.active, .icon_notify.active{
     background-color: var(--hover-darck-grey);
     cursor: pointer;
 }

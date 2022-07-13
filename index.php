@@ -16,7 +16,32 @@
             <img src="assets/img/logo.svg">
             <div class="brand_icons">
                 <i class="icon_notify icon-bell-o"><small>3</small></i>
+
                 <i class="icon_profile far fa-user-circle"></i>
+
+
+                <article class="profile">
+                    <div class="profile_header row_medium">
+                        <div class="profile_header_avata column">
+                            <img src="assets/img/profile.JPG">
+                        </div>
+                        <div class="column">
+                            <h4>André Gabry</h4>
+                            <p>andre.gabry@icloud.com</p>
+                        </div>
+                    </div>
+                    <div class="profile_content row_medium">
+                        <div class="column_small">
+                            <p><i class="far fa-user-circle"></i>Profile</p>
+                            <p><i class="far fa-gear"></i>Configurações</p>
+                        </div>
+                    </div>
+                    <div class="profile_footer row_medium">
+                        <p><i class="far fa-door-open"></i>Sair</p>
+                    </div>
+                </article>
+
+
             </div>
         </div>
         <div class="sidebar_user">
