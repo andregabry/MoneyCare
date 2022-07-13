@@ -20,7 +20,7 @@ $(function (){
         }
 
         var load_file = $(this).attr("href");
-        content.html(defaults).delay(1000).fadeIn(100, function (){
+        content.html(defaults).fadeIn(100, function (){
             content.load(template + load_file + ".php");
         });
     });

@@ -41,8 +41,8 @@
     <div class="app_main">
         <header class="app_header">
             <i class="menu_toggle fa fa-bars" data-mobilemenu="open"></i>
-            <div class="">
-                <i class="fas fa-wallet"></i>
+            <div class="wallets">
+                <i class="fas fa-wallet"></i><p>Saldo geral</p>
             </div>
         </header>
         <main class="app_content">

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 @import "boot.css";
+@import "dashboard.css";
 
 /* APP */
 
@@ -200,7 +201,7 @@
     box-shadow: 0 1px 2px var(--color-light-grey);
 }
 
-.app_header i{
+.menu_toggle{
     font-size: var(--font-medium);
     color: var(--color-default);
     border-radius: var(--radius-round);
@@ -216,6 +217,28 @@
 .menu_toggle{
     margin-left: 0;
     transition: 600ms ease;
+}
+
+.wallets{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-extra-light-grey);
+    padding: 0.8em 1.5em;
+    border-radius: var(--radius-normal);
+    color: var(--color-default);
+    font-size: var(--font-min);
+    font-weight: var(--weight-semi-bold);
+    transition: 300ms;
+}
+
+.wallets:hover{
+    cursor: pointer;
+    color: var(--hover-color-green);
+}
+
+.wallets i{
+    vertical-align: bottom;
+    margin-right: 0.5em;
 }
 
 /* APP CONTENT */
@@ -250,257 +273,6 @@
     position: absolute;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.51);
-}
-
-/* GRAPHIC */
-
-.graphic{
-    width: 100%;
-    height: 100%;
-}
-
-.graphic_main header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    line-height: 3em;
-    color: var(--color-default);
-}
-
-.graphic_main header h3{
-    font-size: var(--font-normal);
-}
-
-.graphic_main header i{
-    margin-right: 1em;
-}
-
-.graphic_content{
-    width: 100%;
-}
-
-/* CARD RECEIVE AND SPEND */
-
-.receive_header, .spend_header{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    line-height: 3em;
-    border-bottom: 1px solid var(--color-extra-light-grey);
-    color: var(--color-default);
-}
-
-.receive_header h3, .spend_header h3{
-    font-size: var(--font-normal);
-}
-
-.receive_header i, .spend_header i{
-    margin-right: 1em;
-}
-
-.receive_main, .spend_main{
-
-}
-
-.receive_title p{
-    font-size: var(--font-small);
-    color: var(--color-green);
-    font-weight: var(--weight-bold);
-    line-height: 1em;
-    margin-top: 1em;
-}
-
-.receive_title small{
-    color: var(--color-default);
-    font-size: var(--font-min);
-    line-height: 1em;
-    margin: 0 0 1em 0;
-}
-
-.receive_main, .spend_main{
-    padding: 1.275em 0;
-}
-
-.receive_value p{
-    font-size: var(--font-small);
-    color: var(--color-darck-grey);
-    font-weight: var(--weight-bold);
-    line-height: 1em;
-    margin-top: 1em;
-}
-
-.receive_value i{
-    color: var(--color-green);
-    cursor: pointer;
-}
-
-.receive_value i:hover{
-    color: var(--hover-color-green);
-}
-
-.spend_title p{
-    font-size: var(--font-small);
-    color: var(--color-green);
-    font-weight: var(--weight-bold);
-    line-height: 1em;
-    margin-top: 1em;
-}
-
-.spend_title small{
-    color: var(--color-default);
-    font-size: var(--font-min);
-    line-height: 1em;
-    margin: 0 0 1em 0;
-}
-
-.spend_value p{
-    font-size: var(--font-small);
-    color: var(--color-darck-grey);
-    font-weight: var(--weight-bold);
-    line-height: 1em;
-    margin-top: 1em;
-}
-
-.spend_value i{
-    color: var(--color-red);
-    cursor: pointer;
-}
-
-.spend_value i:hover{
-    color: var(--hover-color-red);
-}
-
-.receive_footer, .spend_footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    line-height: 3em;
-    border-top: 1px solid var(--color-extra-light-grey);
-}
-
-.receive_footer p, .spend_footer p{
-    color: var(--color-default);
-    font-weight: var(--weight-medium);
-}
-
-.receive_footer p:hover, .spend_footer p:hover{
-    color: var(--color-green);
-    cursor: pointer;
-}
-
-/* MORE RECEIVE | SPEND */
-
-.more_receive{
-    border: 1px solid var(--color-green);
-    color: var(--color-green);
-    align-items: center;
-    justify-content: center;
-    transition: 300ms;
-}
-
-.more_receive:hover{
-    cursor: pointer;
-    background-color: var(--color-green);
-    color: var(--color-white);
-}
-
-.more_receive i{
-    margin-right: 0.3em;
-}
-
-.more_spend{
-    border: 1px solid var(--color-red);
-    color: var(--color-red);
-    align-items: center;
-    justify-content: center;
-    transition: 300ms;
-}
-
-.more_spend:hover{
-    cursor: pointer;
-    background-color: var(--color-red);
-    color: var(--color-white);
-}
-
-.more_spend i{
-    margin-right: 0.3em;
-}
-
-/* BALANCE */
-
-.balance{
-    position: relative;
-    overflow: hidden;
-}
-
-.back_icon{
-    position: absolute;
-    font-size: 5em;
-    color: rgba(15, 149, 137, 0.1);
-    left: 86%;
-    top: 76%;
-}
-
-.balance_header{
-    line-height: 3em;
-    color: var(--color-default);
-    font-weight: var(--weight-semi-bold);
-    font-size: var(--font-normal);
-    border-bottom: 1px solid var(--color-extra-light-grey);
-}
-
-.balance_header i{
-    margin-right: 1em;
-}
-
-.balance_main{
-    line-height: 1em;
-}
-
-.balance_general{
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-    border-radius: var(--radius-normal);
-    margin-top: 1em;
-    padding: 0.5em;
-    border: 1px solid var(--color-green);
-    color: var(--color-default);
-}
-
-.balance_receive, .balance_spend{
-    line-height: 2em;
-    margin-top: 1em;
-}
-
-.balance_general h3{
-    font-size: var(--font-normal);
-    margin-bottom: 0.5em;
-    color: var(--color-green);
-}
-
-.balance_receive h3{
-    font-size: var(--font-small);
-    color: var(--color-green);
-}
-
-.balance_spend h3{
-    font-size: var(--font-small);
-    color: var(--color-red);
-}
-
-.balance_general i, .balance_receive i, .balance_spend i{
-    margin-right: 1em;
-}
-
-.balance_general p, .balance_receive p, .balance_spend p{
-    line-height: 1em;
-    font-size: var(--font-small);
-    color: var(--color-default);
-    font-weight: var(--weight-medium);
 }
 
 @media screen and (max-width: 44em){
