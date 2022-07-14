@@ -53,6 +53,7 @@
 /* SIDEBAR BRAND */
 
 .sidebar_brand{
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,24 +62,7 @@
 }
 
 .brand_icons{
-    position: relative;
     color: var(--color-grey);
-}
-
-.profile{
-    position: fixed;
-    background-color: var(--color-white);
-    border-radius: var(--radius-medium);
-    padding: 1.5em;
-}
-
-.profile_header{
-    line-height: 4em;
-}
-
-.profile_header img{
-    width: 3em;
-    border-radius: var(--radius-round);
 }
 
 .icon_notify, .icon_profile{
@@ -95,7 +79,7 @@
     cursor: pointer;
 }
 
-.brand_icons small{
+.notify_quantity{
     color: var(--color-white);
     position: absolute;
     font-size: 0.6em;
@@ -104,6 +88,169 @@
     background-color: var(--color-green);
     top: 4px;
     left: 22px;
+}
+
+/* NOTIFY */
+
+.notify{
+    position: fixed;
+    display: block;
+    width: 22.5em;
+    height: 34.5em;
+    background-color: var(--color-white);
+    overflow: hidden;
+    border-radius: var(--radius-medium);
+    left: 10.5em;
+    z-index: var(--index-modal);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.31);
+}
+
+.notify_header{
+    padding: 1.8em 1.5em;
+    background-color: var(--color-darck-blue);
+}
+
+.notify_header h3{
+    font-size: var(--font-normal);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-white);
+}
+
+.notify_header i{
+    color: var(--color-white);
+}
+
+.notify_content{
+    overflow-y: auto;
+    padding: 1em 1.5em;
+    border-bottom: 1px solid var(--color-extra-light-grey);
+}
+
+.notify_content:hover{
+    cursor: pointer;
+    background-color: #f8fafc;
+}
+
+.content_avatar img{
+    width: 2em;
+    border-radius: var(--radius-round);
+    margin-right: 1em;
+}
+
+.message_sender{
+    color: var(--color-darck-grey);
+}
+
+.message_sender h4{
+    font-weight: var(--weight-semi-bold);
+    font-size: var(--font-small);
+}
+
+/* PROFILE */
+
+.background_modal{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: var(--index-fold);
+}
+
+.profile{
+    display: none;
+    position: absolute;
+    background-color: var(--color-white);
+    border-radius: var(--radius-normal);
+    padding: 1em;
+    width: 14em;
+    height: 18.5em;
+    left: 1.5em;
+    top: 4em;
+    z-index: var(--index-modal);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.31);
+}
+
+.profile_header{
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_header_avatar{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--color-extra-light-grey);
+}
+
+.profile_header_content{
+    padding: 1em 1em;
+    border-bottom: 1px solid var(--color-extra-light-grey);
+}
+
+.profile_header_content h4{
+    color: var(--color-default);
+    font-size: var(--font-small);
+}
+
+.profile_header_content p{
+    color: var(--color-default);
+    font-size: var(--font-min);
+}
+
+.profile_header img{
+    width: 3em;
+    border-radius: var(--radius-round);
+}
+
+.profile_content{
+    display: block !important;
+    padding: 0.6em 0;
+    border-bottom: 1px solid var(--color-extra-light-grey);
+}
+
+.profile_content div p{
+    color: var(--color-default);
+    display: block;
+    width: 100%;
+    border-radius: var(--radius-normal);
+    padding: 0.4em 1em;
+    margin-bottom: 2px;
+    transition: 300ms;
+}
+
+.profile_content div p:hover{
+    cursor: pointer;
+    background-color: var(--color-extra-light-grey);
+}
+
+.profile_content div i{
+    margin-right: 1em;
+}
+
+.profile_footer{
+    display: block;
+    padding: 0.6em 0;
+}
+
+.profile_footer p{
+    display: block;
+    padding: 0.4em 1em;
+    border-radius: var(--radius-normal);
+    font-size: var(--font-normal);
+    color: var(--color-default);
+    transition: 300ms;
+}
+
+.profile_footer p:hover{
+    cursor: pointer;
+    background-color: var(--color-extra-light-grey);
+}
+
+.profile_footer i{
+    margin-right: 1em;
 }
 
 /* SIDEBAR USER */
@@ -215,7 +362,7 @@
     height: 4em;
     padding: 0.6em 1em;
     background-color: var(--color-white);
-    box-shadow: 0 1px 2px var(--color-light-grey);
+    box-shadow: var(--box-shadow);
 }
 
 .menu_toggle{

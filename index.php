@@ -15,31 +15,66 @@
         <div class="sidebar_brand">
             <img src="assets/img/logo.svg">
             <div class="brand_icons">
-                <i class="icon_notify icon-bell-o"><small>3</small></i>
+                <i class="icon_notify icon-bell-o"><small class="notify_quantity">3</small></i>
+
+
+                <div class="background_modal"></div>
+
+
+                <article class="notify">
+                        <div class="notify_header row_medium">
+                            <h3>Notificações</h3>
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="notify_content row_medium">
+                            <div class="content_avatar column">
+                                <img src="assets/img/profile.JPG">
+                            </div>
+                            <div class="content_message column">
+                                <div class="message_sender row_medium">
+                                <h4>André Gabry</h4>
+                                </div>
+                                <div class="message_content row_medium">
+                                    <p>Lembrar de entrar em contato com os funcionários</p>
+                                </div>
+                                <div class="message_date row_medium">
+                                    <small>14 Jul, 13:25</small>
+                                </div>
+                            </div>
+                            <div class="content_action column">
+                                <i class="fas fa-circle"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                </article>
+
 
                 <i class="icon_profile far fa-user-circle"></i>
 
 
                 <article class="profile">
-                    <div class="profile_header row_medium">
-                        <div class="profile_header_avata column">
+                    <div class="profile_header column">
+                        <div class="profile_header_avatar row_medium">
                             <img src="assets/img/profile.JPG">
                         </div>
-                        <div class="column">
-                            <h4>André Gabry</h4>
-                            <p>andre.gabry@icloud.com</p>
+                        <div class="profile_header_content row_medium">
+                            <div class="column">
+                                <h4>André Gabry</h4>
+                                <p>andre.gabry@icloud.com</p>
+                            </div>
                         </div>
                     </div>
                     <div class="profile_content row_medium">
-                        <div class="column_small">
-                            <p><i class="far fa-user-circle"></i>Profile</p>
-                            <p><i class="far fa-gear"></i>Configurações</p>
+                        <div class="column">
+                            <p><i class="far fa-user-circle"></i>Perfil</p>
+                            <p><i class="fas fa-cog"></i>Configurações</p>
                         </div>
                     </div>
                     <div class="profile_footer row_medium">
-                        <p><i class="far fa-door-open"></i>Sair</p>
+                        <p><i class="fas fa-door-open"></i>Sair</p>
                     </div>
                 </article>
+
 
 
             </div>
