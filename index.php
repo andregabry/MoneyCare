@@ -22,29 +22,33 @@
 
 
                 <article class="notify">
-                        <div class="notify_header row_medium">
+                        <div class="notify_header">
                             <h3>Notificações</h3>
                             <i class="fas fa-envelope-open"></i>
                         </div>
-                        <div class="notify_content row_medium">
-                            <div class="content_avatar column">
-                                <img src="assets/img/profile.JPG">
-                            </div>
-                            <div class="content_message column">
-                                <div class="message_sender row_medium">
-                                <h4>André Gabry</h4>
+                        <div class="notify_content">
+                            <?php for ($i = 0; $i <= 10; $i ++){ ?>
+                            <div class="notify_content_message">
+                                <div class="content_avatar">
+                                    <img src="assets/img/profile.JPG">
                                 </div>
-                                <div class="message_content row_medium">
-                                    <p>Lembrar de entrar em contato com os funcionários</p>
+                                <div class="content_message">
+                                    <div class="message_sender">
+                                    <h4>André Gabry</h4>
+                                    </div>
+                                    <div class="message_content">
+                                        <p>Lembrar de entrar em contato com os funcionários</p>
+                                    </div>
+                                    <div class="message_date">
+                                        <small>14 Jul, 13:25</small>
+                                    </div>
                                 </div>
-                                <div class="message_date row_medium">
-                                    <small>14 Jul, 13:25</small>
+                                <div class="content_action">
+                                    <i class="content_action_circle fas fa-circle"></i>
+                                    <i class="content_action_x fas fa-times"></i>
                                 </div>
                             </div>
-                            <div class="content_action column">
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-times"></i>
-                            </div>
+                            <?php } ?>
                         </div>
                 </article>
 

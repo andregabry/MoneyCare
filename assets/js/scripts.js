@@ -8,6 +8,7 @@ $(function (){
         $(this).toggleClass("menu_toggle_mobile");
     });
 
+
     /* CONTENT NAVIGATION */
 
     var content = $(".app_content");
@@ -37,6 +38,15 @@ $(function (){
     });
     $(".background_modal").click(function (){
         $(".background_modal, .profile").fadeOut(200);
+    });
+
+    /* NOTIFY MESSAGE */
+
+    $(".icon_notify").click(function (){
+        $(".background_modal, .notify").fadeIn(200);
+    });
+    $(".background_modal").click(function (){
+        $(".background_modal, .notify").fadeOut(200);
     });
 
 });
