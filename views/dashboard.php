@@ -1,14 +1,14 @@
 <div class="row">
     <div class="column_left">
         <div class="row">
-        <article class="graphic widget_large">
-            <div class="graphic_main">
-                <header>
-                    <h3><i class="fas fa-chart-bar"></i> Controle</h3>
-                </header>
-                <div class="graphic_content" id="control"></div>
-            </div>
-        </article>
+            <article class="graphic widget_large">
+                <div class="graphic_main">
+                    <header>
+                        <h3><i class="fas fa-chart-bar"></i> Controle</h3>
+                    </header>
+                    <div class="graphic_content" id="control"></div>
+                </div>
+            </article>
         </div>
         <div class="row">
             <article class="receive widget_small">
@@ -103,7 +103,7 @@
             spacingTop: 5,
             spacingLeft: 0,
             spacingRight: 5,
-            height: (9 /16 * 100) + '%',
+            height: (9 / 16 * 100) + '%',
         },
         title: null,
         xAxis: {
@@ -127,12 +127,12 @@
         },
         series: [{
             name: 'Receitas',
-            data: [3,1,5,6,9],
+            data: [3, 1, 5, 6, 9],
             color: '#0f9589',
             lineColor: '#15afa5'
         }, {
             name: 'Despesas',
-            data: [4,7,0,3,10],
+            data: [4, 7, 0, 3, 10],
             color: '#cc3838',
             lineColor: '#ea7d7d'
         }]

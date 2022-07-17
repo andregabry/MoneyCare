@@ -9,7 +9,7 @@
         <i class="fas fa-envelope-open"></i>
     </div>
     <div class="notify_content">
-        <?php for ($i = 0; $i <= 10; $i ++){ ?>
+        <?php for ($i = 0; $i <= 10; $i++) { ?>
             <div class="notify_content_message">
                 <div class="content_avatar">
                     <img src="assets/img/profile.JPG">

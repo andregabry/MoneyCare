@@ -21,22 +21,22 @@
                 <div class="background_modal"></div>
 
                 <article class="notify">
-                        <div class="notify_header">
-                            <div class="header_icons">
+                    <div class="notify_header">
+                        <div class="header_icons">
                             <i class="header_x fas fa-times"></i>
                             <h3>Notificações</h3>
-                            </div>
-                            <i class="fas fa-envelope-open"></i>
                         </div>
-                        <div class="notify_content">
-                            <?php for ($i = 0; $i <= 10; $i ++){ ?>
+                        <i class="fas fa-envelope-open"></i>
+                    </div>
+                    <div class="notify_content">
+                        <?php for ($i = 0; $i <= 10; $i++) { ?>
                             <div class="notify_content_message">
                                 <div class="content_avatar">
                                     <img src="assets/img/profile.JPG">
                                 </div>
                                 <div class="content_message">
                                     <div class="message_sender">
-                                    <h4>André Gabry</h4>
+                                        <h4>André Gabry</h4>
                                     </div>
                                     <div class="message_content">
                                         <p>Lembrar de entrar em contato com os funcionários</p>
@@ -50,8 +50,8 @@
                                     <i class="content_action_x fas fa-times"></i>
                                 </div>
                             </div>
-                            <?php } ?>
-                        </div>
+                        <?php } ?>
+                    </div>
                 </article>
 
 
@@ -82,7 +82,6 @@
                 </article>
 
 
-
             </div>
         </div>
         <div class="sidebar_user">
@@ -108,7 +107,8 @@
         <header class="app_header">
             <i class="menu_toggle fa fa-bars"></i>
             <div class="wallets">
-                <i class="fas fa-wallet"></i><p>Saldo geral</p>
+                <i class="fas fa-wallet"></i>
+                <p>Saldo geral</p>
             </div>
         </header>
         <main class="app_content">

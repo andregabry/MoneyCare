@@ -8,14 +8,14 @@
 
 /* APP */
 
-.app{
+.app {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
-.background_modal{
+.background_modal {
     position: fixed;
     display: none;
     width: 100%;
@@ -27,7 +27,7 @@
     z-index: var(--index-modal);
 }
 
-.background_sidebar{
+.background_sidebar {
     position: fixed;
     display: none;
     width: 100%;
@@ -42,7 +42,7 @@
 
 /* SIDEBAR */
 
-.app_sidebar{
+.app_sidebar {
     display: block;
     width: 17.5em;
     height: 100%;
@@ -55,7 +55,7 @@
     z-index: var(--index-menu);
 }
 
-.app_sidebar_mobile{
+.app_sidebar_mobile {
     margin-left: -17.5em;
 }
 
@@ -78,7 +78,7 @@
 
 /* SIDEBAR BRAND */
 
-.sidebar_brand{
+.sidebar_brand {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -87,11 +87,11 @@
     margin-bottom: 2em;
 }
 
-.brand_icons{
+.brand_icons {
     color: var(--color-grey);
 }
 
-.icon_notify, .icon_profile{
+.icon_notify, .icon_profile {
     font-size: 1.3em;
     vertical-align: middle;
     position: relative;
@@ -100,12 +100,12 @@
     transition: 300ms;
 }
 
-.icon_notify:hover, .icon_profile:hover, .icon_profile.active, .icon_notify.active{
+.icon_notify:hover, .icon_profile:hover, .icon_profile.active, .icon_notify.active {
     background-color: var(--hover-darck-grey);
     cursor: pointer;
 }
 
-.notify_quantity{
+.notify_quantity {
     color: var(--color-white);
     position: absolute;
     font-size: 0.6em;
@@ -118,7 +118,7 @@
 
 /* NOTIFY */
 
-.notify{
+.notify {
     position: fixed;
     display: none;
     width: 22.5em;
@@ -131,7 +131,7 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.31);
 }
 
-.notify_header{
+.notify_header {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -140,7 +140,7 @@
     background-color: var(--color-darck-blue);
 }
 
-.header_icons{
+.header_icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -149,7 +149,7 @@
     color: var(--color-white);
 }
 
-.header_x{
+.header_x {
     display: none;
     margin-right: 1em;
     border-radius: var(--radius-round);
@@ -157,16 +157,16 @@
     transition: 300ms;
 }
 
-.header_x:hover{
+.header_x:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: var(--hover-color-red);
 }
 
-.notify_header i{
+.notify_header i {
     color: var(--color-white);
 }
 
-.notify_content{
+.notify_content {
     display: block;
     width: 100%;
     height: calc(100% - 5em);
@@ -190,7 +190,7 @@
     background-color: #00000080;
 }
 
-.notify_content_message{
+.notify_content_message {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -198,12 +198,12 @@
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.notify_content_message:hover{
+.notify_content_message:hover {
     cursor: pointer;
     background-color: #f8fafc;
 }
 
-.content_avatar{
+.content_avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,39 +211,39 @@
     height: 100%;
 }
 
-.content_avatar img{
+.content_avatar img {
     width: 2em;
     border-radius: var(--radius-round);
 }
 
-.message_sender{
+.message_sender {
     color: var(--color-darck-grey);
 }
 
-.message_sender h4{
+.message_sender h4 {
     font-weight: var(--weight-semi-bold);
     font-size: var(--font-small);
 }
 
-.message_content p{
+.message_content p {
     margin-top: 0.5em;
     font-size: var(--font-small);
     color: var(--color-default);
 }
 
-.message_date small{
+.message_date small {
     margin-top: 0.5em;
     font-size: var(--font-min);
 }
 
-.content_message{
+.content_message {
     display: flex;
     flex-direction: column;
     width: 65%;
     height: 100%;
 }
 
-.content_action{
+.content_action {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,11 +251,11 @@
     height: 100%;
 }
 
-.content_action i{
+.content_action i {
     margin-top: 1em;
 }
 
-.content_action_circle{
+.content_action_circle {
     font-size: var(--font-small);
     color: var(--color-darck-blue);
     border-radius: var(--radius-round);
@@ -263,18 +263,18 @@
     transition: 300ms;
 }
 
-.content_action_circle:hover{
+.content_action_circle:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.13);
 }
 
-.content_action_x{
+.content_action_x {
     border-radius: var(--radius-round);
     padding: 4px 6px;
     transition: 300ms;
 }
 
-.content_action_x:hover{
+.content_action_x:hover {
     cursor: pointer;
     color: var(--hover-color-red);
     background-color: rgba(0, 0, 0, 0.13);
@@ -282,7 +282,7 @@
 
 /* PROFILE */
 
-.profile{
+.profile {
     display: none;
     position: absolute;
     background-color: var(--color-white);
@@ -296,45 +296,45 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.31);
 }
 
-.profile_header{
+.profile_header {
     align-items: center;
     justify-content: center;
 }
 
-.profile_header_avatar{
+.profile_header_avatar {
     align-items: center;
     justify-content: center;
     padding-bottom: 1em;
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.profile_header_avatar img{
+.profile_header_avatar img {
     width: 3em;
     border-radius: var(--radius-round);
 }
 
-.profile_header_content{
+.profile_header_content {
     padding: 1em 1em;
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.profile_header_content div h4{
+.profile_header_content div h4 {
     color: var(--color-default);
     font-size: var(--font-small);
 }
 
-.profile_header_content div p{
+.profile_header_content div p {
     color: var(--color-default);
     font-size: var(--font-min);
 }
 
-.profile_content{
+.profile_content {
     display: block;
     padding: 0.6em 0;
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.profile_content div p{
+.profile_content div p {
     color: var(--color-default);
     display: block;
     border-radius: var(--radius-normal);
@@ -343,21 +343,21 @@
     transition: 300ms;
 }
 
-.profile_content div p:hover{
+.profile_content div p:hover {
     cursor: pointer;
     background-color: var(--color-extra-light-grey);
 }
 
-.profile_content div i{
+.profile_content div i {
     margin-right: 1em;
 }
 
-.profile_footer{
+.profile_footer {
     display: block;
     padding: 0.6em 0;
 }
 
-.profile_footer p{
+.profile_footer p {
     display: block;
     padding: 0.4em 1em;
     border-radius: var(--radius-normal);
@@ -366,38 +366,38 @@
     transition: 300ms;
 }
 
-.profile_footer p:hover{
+.profile_footer p:hover {
     cursor: pointer;
     background-color: var(--color-extra-light-grey);
 }
 
-.profile_footer i{
+.profile_footer i {
     margin-right: 1em;
 }
 
 /* SIDEBAR USER */
 
-.sidebar_user{
+.sidebar_user {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.sidebar_user img{
+.sidebar_user img {
     border-radius: var(--radius-round);
     width: 5.5em;
     margin-bottom: 1.5em;
 }
 
-.sidebar_user h3{
+.sidebar_user h3 {
     margin-bottom: 0.5em;
     font-size: var(--font-small);
     font-weight: var(--weight-semi-bold);
     color: var(--color-extra-light-grey);
 }
 
-.sidebar_user span{
+.sidebar_user span {
     font-weight: var(--weight-semi-bold);
     color: var(--color-grey);
     margin-bottom: 4.3em;
@@ -406,14 +406,14 @@
 
 /* SIDEBAR MAP SYSTEM */
 
-.sidebar_map{
+.sidebar_map {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
-.sidebar_map span{
+.sidebar_map span {
     color: var(--color-purple);
     text-transform: uppercase;
     font-size: var(--font-min);
@@ -422,7 +422,7 @@
     padding: 0 1em;
 }
 
-.sidebar_map small{
+.sidebar_map small {
     color: rgba(218, 221, 231, 0.51);
     font-size: 0.6em;
     text-transform: uppercase;
@@ -433,7 +433,7 @@
 
 /* SIDEBAR MENU */
 
-.sidebar_menu{
+.sidebar_menu {
     display: block;
     height: calc(100% - 20em);
     overflow-y: auto;
@@ -459,7 +459,7 @@
     background-color: #00000080;
 }
 
-.sidebar_menu a{
+.sidebar_menu a {
     color: var(--color-light-grey);
     display: block;
     padding: 0 1em;
@@ -471,12 +471,12 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.sidebar_menu a:hover, .sidebar_menu a.active{
+.sidebar_menu a:hover, .sidebar_menu a.active {
     background-color: var(--hover-darck-grey);
     color: var(--color-extra-light-grey);
 }
 
-.sidebar_menu i{
+.sidebar_menu i {
     margin-right: 1.2em;
     font-size: var(--font-medium) !important;
 }
@@ -490,13 +490,13 @@
     transition: 600ms ease;
 }
 
-.app_main_mobile{
+.app_main_mobile {
     width: 100%;
 }
 
 /* APP HEADER */
 
-.app_header{
+.app_header {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -509,7 +509,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.menu_toggle{
+.menu_toggle {
     display: block;
     font-size: var(--font-medium);
     color: var(--color-default);
@@ -518,17 +518,17 @@
     transition: 300ms;
 }
 
-.app_header i:hover, .app_header i.active{
+.app_header i:hover, .app_header i.active {
     background-color: var(--color-extra-light-grey);
     cursor: pointer;
 }
 
-.menu_toggle{
+.menu_toggle {
     margin-left: 0;
     transition: 600ms ease;
 }
 
-.wallets{
+.wallets {
     display: flex;
     align-items: center;
     background-color: var(--color-extra-light-grey);
@@ -540,19 +540,19 @@
     transition: 300ms;
 }
 
-.wallets:hover{
+.wallets:hover {
     cursor: pointer;
     color: var(--hover-color-green);
 }
 
-.wallets i{
+.wallets i {
     vertical-align: bottom;
     margin-right: 0.5em;
 }
 
 /* APP CONTENT */
 
-.app_content{
+.app_content {
     display: block;
     width: 100%;
     height: calc(100% - 4em);
@@ -578,32 +578,32 @@
     background-color: #00000080;
 }
 
-.app_content_load{
+.app_content_load {
     position: absolute;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.51);
 }
 
-@media screen and (max-width: 44em){
-    .app_sidebar{
+@media screen and (max-width: 44em) {
+    .app_sidebar {
         margin-left: -17.5em;
         position: fixed;
         z-index: var(--index-menu);
     }
 
-    .background_modal{
+    .background_modal {
         z-index: var(--index-fold);
     }
 
-    .app_sidebar_mobile{
+    .app_sidebar_mobile {
         margin-left: 0;
     }
 
-    .app_main{
+    .app_main {
         width: 100%;
     }
 
-    .notify{
+    .notify {
         position: fixed;
         top: 0;
         left: 0;
@@ -613,7 +613,7 @@
 
     }
 
-    .header_x{
+    .header_x {
         display: block;
     }
 }

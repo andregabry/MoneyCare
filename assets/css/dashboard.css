@@ -1,11 +1,11 @@
 /* GRAPHIC */
 
-.graphic{
+.graphic {
     width: 100%;
     height: 100%;
 }
 
-.graphic_main header{
+.graphic_main header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,21 +14,21 @@
     color: var(--color-default);
 }
 
-.graphic_main header h3{
+.graphic_main header h3 {
     font-size: var(--font-normal);
 }
 
-.graphic_main header i{
+.graphic_main header i {
     margin-right: 1em;
 }
 
-.graphic_content{
+.graphic_content {
     width: 100%;
 }
 
 /* CARD RECEIVE AND SPEND */
 
-.receive_header, .spend_header{
+.receive_header, .spend_header {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -38,19 +38,19 @@
     color: var(--color-default);
 }
 
-.receive_header h3, .spend_header h3{
+.receive_header h3, .spend_header h3 {
     font-size: var(--font-normal);
 }
 
-.receive_header i, .spend_header i{
+.receive_header i, .spend_header i {
     margin-right: 1em;
 }
 
-.receive_main, .spend_main{
+.receive_main, .spend_main {
 
 }
 
-.receive_title p{
+.receive_title p {
     font-size: var(--font-small);
     color: var(--color-green);
     font-weight: var(--weight-bold);
@@ -58,18 +58,18 @@
     margin-top: 1em;
 }
 
-.receive_title small{
+.receive_title small {
     color: var(--color-default);
     font-size: var(--font-min);
     line-height: 1em;
     margin: 0 0 1em 0;
 }
 
-.receive_main, .spend_main{
+.receive_main, .spend_main {
     padding: 1.275em 0;
 }
 
-.receive_value p{
+.receive_value p {
     font-size: var(--font-small);
     color: var(--color-darck-grey);
     font-weight: var(--weight-bold);
@@ -77,16 +77,16 @@
     margin-top: 1em;
 }
 
-.receive_value i{
+.receive_value i {
     color: var(--color-green);
     cursor: pointer;
 }
 
-.receive_value i:hover{
+.receive_value i:hover {
     color: var(--hover-color-green);
 }
 
-.spend_title p{
+.spend_title p {
     font-size: var(--font-small);
     color: var(--color-green);
     font-weight: var(--weight-bold);
@@ -94,14 +94,14 @@
     margin-top: 1em;
 }
 
-.spend_title small{
+.spend_title small {
     color: var(--color-default);
     font-size: var(--font-min);
     line-height: 1em;
     margin: 0 0 1em 0;
 }
 
-.spend_value p{
+.spend_value p {
     font-size: var(--font-small);
     color: var(--color-darck-grey);
     font-weight: var(--weight-bold);
@@ -109,16 +109,16 @@
     margin-top: 1em;
 }
 
-.spend_value i{
+.spend_value i {
     color: var(--color-red);
     cursor: pointer;
 }
 
-.spend_value i:hover{
+.spend_value i:hover {
     color: var(--hover-color-red);
 }
 
-.receive_footer, .spend_footer{
+.receive_footer, .spend_footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,19 +126,19 @@
     border-top: 1px solid var(--color-extra-light-grey);
 }
 
-.receive_footer p, .spend_footer p{
+.receive_footer p, .spend_footer p {
     color: var(--color-default);
     font-weight: var(--weight-medium);
 }
 
-.receive_footer p:hover, .spend_footer p:hover{
+.receive_footer p:hover, .spend_footer p:hover {
     color: var(--color-green);
     cursor: pointer;
 }
 
 /* MORE RECEIVE | SPEND */
 
-.more_receive{
+.more_receive {
     border: 1px solid var(--color-green);
     color: var(--color-green);
     align-items: center;
@@ -146,17 +146,17 @@
     transition: 300ms;
 }
 
-.more_receive:hover{
+.more_receive:hover {
     cursor: pointer;
     background-color: var(--color-green);
     color: var(--color-white);
 }
 
-.more_receive i{
+.more_receive i {
     margin-right: 0.3em;
 }
 
-.more_spend{
+.more_spend {
     border: 1px solid var(--color-red);
     color: var(--color-red);
     align-items: center;
@@ -164,24 +164,24 @@
     transition: 300ms;
 }
 
-.more_spend:hover{
+.more_spend:hover {
     cursor: pointer;
     background-color: var(--color-red);
     color: var(--color-white);
 }
 
-.more_spend i{
+.more_spend i {
     margin-right: 0.3em;
 }
 
 /* BALANCE */
 
-.balance{
+.balance {
     position: relative;
     overflow: hidden;
 }
 
-.back_icon{
+.back_icon {
     position: absolute;
     font-size: 5em;
     color: rgba(15, 149, 137, 0.1);
@@ -189,7 +189,7 @@
     top: 71%;
 }
 
-.balance_header{
+.balance_header {
     line-height: 3em;
     color: var(--color-default);
     font-weight: var(--weight-semi-bold);
@@ -197,15 +197,15 @@
     border-bottom: 1px solid var(--color-extra-light-grey);
 }
 
-.balance_header i{
+.balance_header i {
     margin-right: 1em;
 }
 
-.balance_main{
+.balance_main {
     line-height: 1em;
 }
 
-.balance_general{
+.balance_general {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
@@ -217,32 +217,32 @@
     color: var(--color-default);
 }
 
-.balance_receive, .balance_spend{
+.balance_receive, .balance_spend {
     line-height: 2em;
     margin-top: 1em;
 }
 
-.balance_general h3{
+.balance_general h3 {
     font-size: var(--font-normal);
     margin-bottom: 0.5em;
     color: var(--color-green);
 }
 
-.balance_receive h3{
+.balance_receive h3 {
     font-size: var(--font-small);
     color: var(--color-green);
 }
 
-.balance_spend h3{
+.balance_spend h3 {
     font-size: var(--font-small);
     color: var(--color-red);
 }
 
-.balance_general i, .balance_receive i, .balance_spend i{
+.balance_general i, .balance_receive i, .balance_spend i {
     margin-right: 1em;
 }
 
-.balance_general p, .balance_receive p, .balance_spend p{
+.balance_general p, .balance_receive p, .balance_spend p {
     line-height: 1em;
     font-size: var(--font-small);
     color: var(--color-default);
