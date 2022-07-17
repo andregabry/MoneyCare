@@ -33,7 +33,7 @@ $(function (){
     var content = $(".app_content");
     var defaults = content.html();
     var template = "views/";
-    content.load(template + "dashboard.php");
+    content.load(template + "wallets.php");
 
     $("body").on("click", ".j_load", function (e){
         e.preventDefault();
@@ -68,4 +68,12 @@ $(function (){
         $(".background_modal, .notify").fadeOut(200);
     });
 
+});
+
+$('#wallet_overlay').click(function(event) {
+    event.preventDefault();
+    this.blur(); // Manually remove focus from clicked link.
+    $.get(this.href + "#wallet_add", function(html) {
+        $(html).appendTo('#new_wallet').modal();
+    });
 });

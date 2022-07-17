@@ -95,8 +95,8 @@
             <small>Visão geral do sistema</small>
         </div>
         <div class="sidebar_menu">
-            <a class="j_load active" href="dashboard" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
-            <a class="j_load" href="wallets" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
+            <a class="j_load" href="dashboard" title="Dashboard"><i class="fas fa-home"></i> Dashboard</a>
+            <a class="j_load active" href="wallets" title="Carteiras"><i class="fas fa-wallet active"></i> Carteiras</a>
             <a class="j_load" href="receive" title="Receber"><i class="far fa-calendar-plus"></i> Receber</a>
             <a class="j_load" href="spend" title="Pagar"><i class="far fa-calendar-minus"></i> Pagar</a>
             <a class="j_load" href="fixed" title="Fixas"><i class="fas fa-people-arrows"></i> Fixas</a>
