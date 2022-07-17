@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<div class="background_sidebar"></div>
 
 <div class="app">
     <div class="app_sidebar" data-mobilemenu="close">
@@ -17,13 +18,14 @@
             <div class="brand_icons">
                 <i class="icon_notify icon-bell-o"><small class="notify_quantity">3</small></i>
 
-
                 <div class="background_modal"></div>
-
 
                 <article class="notify">
                         <div class="notify_header">
+                            <div class="header_icons">
+                            <i class="header_x fas fa-times"></i>
                             <h3>Notificações</h3>
+                            </div>
                             <i class="fas fa-envelope-open"></i>
                         </div>
                         <div class="notify_content">
@@ -104,7 +106,7 @@
     </div>
     <div class="app_main">
         <header class="app_header">
-            <i class="menu_toggle fa fa-bars" data-mobilemenu="open"></i>
+            <i class="menu_toggle fa fa-bars"></i>
             <div class="wallets">
                 <i class="fas fa-wallet"></i><p>Saldo geral</p>
             </div>
