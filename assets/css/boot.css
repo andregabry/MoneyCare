@@ -35,7 +35,7 @@
     --color-darck-grey: #11192c;
     --color-green: #0f9589;
     --color-darck-blue: #5047e5;
-    --color-purple: #818cf8;
+    --color-purple: #75229e;
     --color-white: #fff;
     --color-blue: #3d83f6;
     --color-yellow: #f59f0d;
@@ -49,6 +49,11 @@
     --hover-color-red: #ea7d7d;
     --hover-duration: 0.3s;
 
+
+    --gradient-purple: linear-gradient(to right, #4c1464 0%, #3933a4 50%, #4c1464 100%);
+    --gradient-blue: linear-gradient(to right, #042256 0%, #475780 50%, #042256 100%);
+    --gradient-red: linear-gradient(to right, #622744 0%, #C53364 50%, #622744 100%);
+    --gradient-black: linear-gradient(to right, #111111 0%, #727272 50%, #0c0c0c 100%);
 
     --radius-normal: 6px;
     --radius-medium: 18px;
@@ -123,6 +128,11 @@ img{
     margin: 0.5em 0.8em;
 }
 
+.column{
+    display: block;
+    width: 50%;
+}
+
 .column_left {
     display: block;
     width: 60%;
@@ -138,6 +148,31 @@ img{
 
 .widget_column {
     display: block;
+}
+
+.gradient {
+    background-size: 200% auto;
+    transition-duration: 0.5s;
+}
+
+.gradient-purple {
+    background-image: var(--gradient-purple);
+}
+
+.gradient-blue {
+    background-image: var(--gradient-blue);
+}
+
+.gradient-red {
+    background-image: var(--gradient-red);
+}
+
+.gradient-black {
+    background-image: var(--gradient-black);
+}
+
+.gradient-hover:hover {
+    background-position: right center;
 }
 
 @media screen and (max-width: 82em) {
@@ -160,12 +195,9 @@ img{
         flex-wrap: wrap-reverse;
     }
 
-    .column_right {
+    .column, .column_right, .column_left {
         top: 0;
         width: 100%;
     }
 
-    .column_left {
-        width: 100%;
-    }
 }

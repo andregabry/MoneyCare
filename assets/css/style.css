@@ -137,7 +137,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1.8em 1.5em;
-    background-color: var(--color-darck-blue);
+    background-color: var(--color-purple);
 }
 
 .header_icons {
