@@ -1,7 +1,7 @@
 <section class="app_wallets row">
     <div class="column">
         <div class="row">
-            <article class="wallet_create gradient-purple gradient-hover gradient widget_small">
+            <article class="wallet_create gradient-purple gradient-hover gradient widget_large">
                 <h2 class="fas fa-exclamation-circle"></h2>
                 <h3>Crie e gerencie suas carteiras</h3>
                 <p>Organize suas contas de diferentes fontes como <b>Minha Casa</b> para PF, <b>Minha Empresa</b> para
@@ -13,7 +13,7 @@
     </div>
     <div class="column">
         <div class="row">
-            <article class="wallet widget_small gradient gradient-blue gradient-hover" id="new_wallet">
+            <article class="wallet widget_large gradient gradient-blue gradient-hover" id="new_wallet">
                 <i class="fas fa-times-circle"></i>
                 <h2 class="fas fa-wallet"></h2>
                 <input data-walletedit="" type="text" name="wallet" value="SANTANDER">

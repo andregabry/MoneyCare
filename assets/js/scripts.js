@@ -33,7 +33,7 @@ $(function () {
     var content = $(".app_content");
     var defaults = content.html();
     var template = "views/";
-    content.load(template + "wallets.php");
+    content.load(template + "receive.php");
 
     $("body").on("click", ".j_load", function (e) {
         e.preventDefault();

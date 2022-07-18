@@ -553,7 +553,9 @@
 /* APP CONTENT */
 
 .app_content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: calc(100% - 4em);
     padding: 1.5em 1em;
@@ -580,8 +582,7 @@
 
 .app_content_load {
     position: absolute;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.51);
+    margin: auto;
 }
 
 @media screen and (max-width: 44em) {

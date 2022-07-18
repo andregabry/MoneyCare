@@ -11,22 +11,22 @@
             </article>
         </div>
         <div class="row">
-            <article class="receive widget_small">
-                <div class="receive_header widget_row">
+            <article class="widget_receive widget_small">
+                <div class="widget_receive_header widget_row">
                     <i class="far fa-calendar-plus"></i>
                     <h3>A receber:</h3>
                 </div>
-                <div class="receive_main widget_row">
+                <div class="widget_receive_main widget_row">
                     <div class="receive_title column_left">
                         <p>Salário <i class="fas fa-exclamation-circle"></i></p>
                         <small>Em 26 dias</small>
                     </div>
-                    <div class="receive_value column_right">
+                    <div class="widget_receive_value column_right">
                         <p>R$ 1.000,00</p>
                         <i class="far fa-thumbs-up"></i>
                     </div>
                 </div>
-                <div class="receive_footer widget_row">
+                <div class="widget_receive_footer widget_row">
                     <p>+ Receitas</p>
                 </div>
             </article>

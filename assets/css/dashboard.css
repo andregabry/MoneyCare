@@ -28,7 +28,7 @@
 
 /* CARD RECEIVE AND SPEND */
 
-.receive_header, .spend_header {
+.widget_receive_header, .spend_header {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -38,15 +38,15 @@
     color: var(--color-default);
 }
 
-.receive_header h3, .spend_header h3 {
+.widget_receive_header h3, .spend_header h3 {
     font-size: var(--font-normal);
 }
 
-.receive_header i, .spend_header i {
+.widget_receive_header i, .spend_header i {
     margin-right: 1em;
 }
 
-.receive_main, .spend_main {
+.widget_receive_main, .spend_main {
 
 }
 
@@ -65,7 +65,7 @@
     margin: 0 0 1em 0;
 }
 
-.receive_main, .spend_main {
+.widget_receive_main, .spend_main {
     padding: 1.275em 0;
 }
 
@@ -118,7 +118,7 @@
     color: var(--hover-color-red);
 }
 
-.receive_footer, .spend_footer {
+.widget_receive_footer, .spend_footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,12 +126,12 @@
     border-top: 1px solid var(--color-extra-light-grey);
 }
 
-.receive_footer p, .spend_footer p {
+.widget_receive_footer p, .spend_footer p {
     color: var(--color-default);
     font-weight: var(--weight-medium);
 }
 
-.receive_footer p:hover, .spend_footer p:hover {
+.widget_receive_footer p:hover, .spend_footer p:hover {
     color: var(--color-green);
     cursor: pointer;
 }

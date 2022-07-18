@@ -50,7 +50,7 @@
     --hover-duration: 0.3s;
 
 
-    --gradient-purple: linear-gradient(to right, #4c1464 0%, #3933a4 50%, #4c1464 100%);
+    --gradient-purple: linear-gradient(to right, #4c1464 0%, #6033a4 50%, #4c1464 100%);
     --gradient-blue: linear-gradient(to right, #042256 0%, #475780 50%, #042256 100%);
     --gradient-red: linear-gradient(to right, #622744 0%, #C53364 50%, #622744 100%);
     --gradient-black: linear-gradient(to right, #111111 0%, #727272 50%, #0c0c0c 100%);
@@ -86,6 +86,7 @@ img{
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 75em;
 }
 
 .widget_row {
@@ -100,7 +101,6 @@ img{
     display: flex;
     flex-direction: column;
     width: calc(50% - 1.6em);
-    height: 100%;
     padding: 1em 2em;
     border-radius: var(--radius-medium);
     margin: 0.5em 0.8em;
@@ -136,14 +136,12 @@ img{
 .column_left {
     display: block;
     width: 60%;
-    height: 100%;
 }
 
 .column_right {
     display: block;
     align-items: flex-end;
     width: 40%;
-    height: 100%;
 }
 
 .widget_column {
@@ -175,7 +173,7 @@ img{
     background-position: right center;
 }
 
-@media screen and (max-width: 82em) {
+@media screen and (max-width: 80em) {
     .widget_small {
         width: 100%;
     }
@@ -196,7 +194,6 @@ img{
     }
 
     .column, .column_right, .column_left {
-        top: 0;
         width: 100%;
     }
 
