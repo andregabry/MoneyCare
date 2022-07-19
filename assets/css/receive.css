@@ -1,0 +1,39 @@
+.receive_content_header{
+    background: none;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.receive_content_header p{
+    flex: 0 0 17.5%;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.receive_content_header p.desc {
+    flex-basis: 30%;
+    text-align: left;
+}
+
+.receive_content_header .price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.receive_content_header .price .check {
+    margin-left: var(--area-small);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.receive_content_header .price .income {
+    color: var(--color-green);
+}
+
+.receive_content_header .price .expense {
+    color: var(--color-red);
+}
