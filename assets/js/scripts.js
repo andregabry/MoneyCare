@@ -33,7 +33,7 @@ $(function () {
     var content = $(".app_content");
     var defaults = content.html();
     var template = "views/";
-    content.load(template + "receive.php");
+    content.load(template + "wallets.php");
 
     $("body").on("click", ".j_load", function (e) {
         e.preventDefault();
@@ -66,6 +66,14 @@ $(function () {
     });
     $(".background_modal, .header_x").click(function () {
         $(".background_modal, .notify").fadeOut(200);
+    });
+
+    /* WALLET CREATE */
+
+    $(".create_wallet").click(function (){
+        console.log("reste de click");
+        alert("Teste de click");
+        $(".wallet_add").fadeIn(300);
     });
 
 });
