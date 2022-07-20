@@ -47,6 +47,7 @@
     display: block;
     width: 17.5em;
     height: 100%;
+    overflow-y: auto;
     padding: 1.2em 1.5em;
     background-color: var(--color-darck-grey);
     box-shadow: var(--box-shadow);
@@ -58,6 +59,26 @@
 
 .app_sidebar_mobile {
     margin-left: -17.5em;
+}
+
+.app_sidebar::-webkit-scrollbar-track {
+    display: none;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.app_sidebar::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.app_sidebar::-webkit-scrollbar-thumb {
+    display: none;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #00000080;
 }
 
 .app_sidebar::-webkit-scrollbar-track {
@@ -436,28 +457,6 @@
 
 .sidebar_menu {
     display: block;
-    height: calc(100% - 20em);
-    overflow-y: auto;
-}
-
-.sidebar_menu::-webkit-scrollbar-track {
-    display: none;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    background-color: #F5F5F5;
-}
-
-.sidebar_menu::-webkit-scrollbar {
-    display: none;
-    width: 6px;
-    background-color: #F5F5F5;
-}
-
-.sidebar_menu::-webkit-scrollbar-thumb {
-    display: none;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    background-color: #00000080;
 }
 
 .sidebar_menu a {

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row_reverse">
     <div class="column_left">
         <div class="row">
             <article class="graphic widget_large">

@@ -27,6 +27,25 @@ $(function () {
         }
     });
 
+    /* PROFILE MENU */
+
+    $(".icon_profile").click(function () {
+        $(".background_modal, .profile").fadeIn(200);
+    });
+
+    $(".background_modal").click(function () {
+        $(".background_modal, .profile").fadeOut(200);
+    });
+
+    /* NOTIFY MESSAGE */
+
+    $(".icon_notify").click(function () {
+        $(".background_modal, .notify").fadeIn(200);
+    });
+
+    $(".background_modal, .header_x").click(function () {
+        $(".background_modal, .notify").fadeOut(200);
+    });
 
     /* CONTENT NAVIGATION */
 
@@ -48,32 +67,6 @@ $(function () {
         content.html(defaults).fadeOut(200, function () {
             content.load(template + load_file + ".php");
         }).fadeIn(100);
-    });
-
-    /* PROFILE MENU */
-
-    $(".icon_profile").click(function () {
-        $(".background_modal, .profile").fadeIn(200);
-    });
-    $(".background_modal").click(function () {
-        $(".background_modal, .profile").fadeOut(200);
-    });
-
-    /* NOTIFY MESSAGE */
-
-    $(".icon_notify").click(function () {
-        $(".background_modal, .notify").fadeIn(200);
-    });
-    $(".background_modal, .header_x").click(function () {
-        $(".background_modal, .notify").fadeOut(200);
-    });
-
-    /* WALLET CREATE */
-
-    $(".create_wallet").click(function (){
-        console.log("reste de click");
-        alert("Teste de click");
-        $(".wallet_add").fadeIn(300);
     });
 
 });

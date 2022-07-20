@@ -4,6 +4,7 @@
     color: var(--color-white);
     text-align: center;
     height: 20em;
+    overflow: hidden;
 }
 
 .wallet_create h2{
@@ -20,7 +21,7 @@
     margin-bottom: 1.5em;
 }
 
-.wallet_create span{
+.create_wallet{
     padding: 0.8em;
     color: var(--color-white);
     border-radius: var(--radius-normal);
@@ -29,7 +30,7 @@
     transition: 300ms;
 }
 
-.wallet_create span:hover{
+.create_wallet:hover{
     cursor: pointer;
     background-color: #00000080;
 }
@@ -99,17 +100,17 @@
     background-color: #00000080;
 }
 
-.wallet_add span{
+.exit_add_wallet{
     color: var(--color-default);
     transition: 300ms;
 }
 
-.wallet_add span:hover{
+.exit_add_wallet:hover{
     cursor: pointer;
-    color: var(--color-white);
+    color: var(--color-darck-grey);
 }
 
-.wallet_add span i{
+.exit_add_wallet i{
     margin-right: 0.5em;
 }
 
