@@ -3,8 +3,19 @@
         <article class="receive_main">
             <div class="receive_header widget_row">
                 <div class="receve_input">
-                    <input type="text">
-                    <input type="text">
+                    <select>
+                        <option>Todos</option>
+                        <option>Santander</option>
+                        <option>C6 BANC</option>
+                        <option>Itaú Personalité</option>
+                        <option>Next</option>
+                    </select>
+                    <select>
+                        <option>Todas</option>
+                        <option>Fixas</option>
+                        <option>Recebar</option>
+                        <option>Mensal</option>
+                    </select>
                     <input type="date">
                     <a href="#" class="fas fa-filter"></a>
                 </div>

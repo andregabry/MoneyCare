@@ -7,21 +7,21 @@
     overflow: hidden;
 }
 
-.wallet_create h2{
+.wallet_create h2 {
     font-size: 3em;
     margin: 0.5em 0;
 }
 
-.wallet_create h3{
+.wallet_create h3 {
     margin-bottom: 1em;
 }
 
-.wallet_create p{
+.wallet_create p {
     font-size: var(--font-small);
     margin-bottom: 1.5em;
 }
 
-.create_wallet{
+.create_wallet {
     padding: 0.8em;
     color: var(--color-white);
     border-radius: var(--radius-normal);
@@ -30,12 +30,12 @@
     transition: 300ms;
 }
 
-.create_wallet:hover{
+.create_wallet:hover {
     cursor: pointer;
     background-color: #00000080;
 }
 
-.wallet_create span i{
+.wallet_create span i {
     margin-right: 0.5em;
 }
 
@@ -52,16 +52,16 @@
     height: 20em;
 }
 
-.wallet_add p{
+.wallet_add p {
     font-size: var(--font-normal);
     margin: 2em 0;
 }
 
-.wallet_add form{
+.wallet_add form {
     display: block;
 }
 
-.wallet_add input{
+.wallet_add input {
     display: block;
     text-align: center;
     width: 100%;
@@ -76,12 +76,12 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.wallet_add input[placeholder]{
+.wallet_add input[placeholder] {
     font-size: var(--font-normal);
     padding-bottom: 0.5em;
 }
 
-.wallet_add form button{
+.wallet_add form button {
     background-color: #00000030;
     border: none;
     color: var(--color-white);
@@ -91,32 +91,32 @@
     margin-bottom: 2em;
 }
 
-.wallet_add form button i{
+.wallet_add form button i {
     margin-right: 0.5em;
 }
 
-.wallet_add form button:hover{
+.wallet_add form button:hover {
     cursor: pointer;
     background-color: #00000080;
 }
 
-.exit_add_wallet{
+.exit_add_wallet {
     color: var(--color-default);
     transition: 300ms;
 }
 
-.exit_add_wallet:hover{
+.exit_add_wallet:hover {
     cursor: pointer;
     color: var(--color-darck-grey);
 }
 
-.exit_add_wallet i{
+.exit_add_wallet i {
     margin-right: 0.5em;
 }
 
 /* WALLETS */
 
-.wallet{
+.wallet {
     display: block;
     text-align: center;
     position: relative;
@@ -124,7 +124,7 @@
     color: var(--color-white);
 }
 
-.wallet i{
+.wallet_delete_icon {
     position: relative;
     left: 51%;
     padding: 0.4em;
@@ -132,19 +132,19 @@
     transition: 300ms;
 }
 
-.wallet i:hover{
+.wallet_delete_icon:hover {
     cursor: pointer;
     background-color: #00000030;
     color: var(--hover-color-red);
 }
 
-.wallet h2{
+.wallet h2 {
     font-size: 3em;
     display: block;
     margin: 0 0 0.5em 0;
 }
 
-.wallet input{
+.wallet input {
     display: block;
     text-align: center;
     width: 100%;
@@ -159,20 +159,92 @@
     font-weight: var(--weight-semi-bold);
 }
 
-.wallet input[value]{
+.wallet input[value] {
     padding-bottom: 0.5em;
 }
 
-.wallet input:target{
+.wallet input:target {
     border: none;
     border-bottom: 1px solid #000000;
 }
 
-.wallet h3{
+.wallet_balance {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
 
-.wallet p{
+.wallet p {
     line-height: 2em;
+}
+
+/* WALLET DELET */
+
+.wallet_delete {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    color: var(--color-white);
+    text-align: center;
+    height: 20em;
+}
+
+.wallet_delete_alert {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.wallet_delete h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.wallet_delete p {
+    line-height: 1.1em;
+    margin-bottom: 3em;
+    font-size: var(--font-small);
+}
+
+.wallet_delete i {
+    margin-right: 0.5em;
+}
+
+.wallet_delete_confirm {
+    padding: 0.8em;
+    background-color: #00000030;
+    border-radius: var(--radius-normal);
+    transition: 300ms;
+}
+
+.wallet_delete_confirm:hover {
+    cursor: pointer;
+    background-color: #00000090;
+}
+
+.wallet_delete_skip {
+    display: block;
+    margin-top: 2em;
+    color: var(--color-default);
+    transition: 300ms;
+}
+
+.wallet_delete_skip:hover {
+    cursor: pointer;
+    color: var(--color-darck-grey);
+}
+
+@media screen and (max-width: 55em) {
+    .wallet, .wallet_create {
+        height: 22em;
+    }
+
+    .wallet_add {
+        height: 22em;
+    }
+
+    .wallet_delete {
+        height: 22em;
+    }
+
 }
