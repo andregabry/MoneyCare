@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="widget_receive_footer widget_row">
-                    <p>+ Receitas</p>
+                    <a href="receive" class="j_load">+ Receitas</a>
                 </div>
             </article>
 
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="spend_footer widget_row">
-                    <p>+ Despesas</p>
+                    <a href="spend" class="j_load">+ Despesas</a>
                 </div>
             </article>
         </div>

@@ -126,12 +126,12 @@
     border-top: 1px solid var(--color-extra-light-grey);
 }
 
-.widget_receive_footer p, .spend_footer p {
+.widget_receive_footer a, .spend_footer a {
     color: var(--color-default);
     font-weight: var(--weight-medium);
 }
 
-.widget_receive_footer p:hover, .spend_footer p:hover {
+.widget_receive_footer a:hover, .spend_footer a:hover {
     color: var(--color-green);
     cursor: pointer;
 }
