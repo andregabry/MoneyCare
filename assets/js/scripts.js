@@ -52,7 +52,7 @@ $(function () {
     var content = $(".app_content");
     var defaults = content.html();
     var template = "views/";
-    content.load(template + "wallets.php");
+    content.load(template + "dashboard.php");
 
     $("body").on("click", ".j_load", function (e) {
         e.preventDefault();
@@ -69,6 +69,11 @@ $(function () {
         }).fadeIn(100);
     });
 
+    /* MORE RECEIVE AND SPEND */
 
+    $("body").on("click", ".more", function (e){
+        e.preventDefault();
+        var load_more = $(this).attr("data-more");
+    });
 
 });
