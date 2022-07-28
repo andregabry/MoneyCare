@@ -69,7 +69,7 @@
     padding: 1.275em 0;
 }
 
-.receive_value p {
+.widget_receive_value p {
     font-size: var(--font-small);
     color: var(--color-darck-grey);
     font-weight: var(--weight-bold);
@@ -77,12 +77,12 @@
     margin-top: 1em;
 }
 
-.receive_value i {
+.widget_receive_value i {
     color: var(--color-green);
     cursor: pointer;
 }
 
-.receive_value i:hover {
+.widget_receive_value i:hover {
     color: var(--hover-color-green);
 }
 
@@ -149,7 +149,7 @@
 .more_receive:hover {
     cursor: pointer;
     background-color: var(--color-green);
-    color: var(--color-white);
+    color: var(--color-white) !important;
 }
 
 .more_receive i {

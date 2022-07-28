@@ -582,7 +582,9 @@
 
 .app_content_load {
     position: absolute;
-    margin: auto;
+    top: 50%;
+    left: 60%;
+    width: 4em;
 }
 
 @media screen and (max-width: 44em) {
