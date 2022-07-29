@@ -11,6 +11,7 @@
 <body>
 
 <div class="background_sidebar"></div>
+<div class="ajax"></div>
 
 <div class="app">
     <div class="app_sidebar" data-mobilemenu="close">

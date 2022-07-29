@@ -73,7 +73,12 @@ $(function () {
 
     $("body").on("click", ".more", function (e){
         e.preventDefault();
+
+        var ajax = $(".ajax");
+        var load_modals = "views/modals.php";
         var load_more = $(this).attr("data-more");
+
+        ajax(load_modals + " #" + load_more);
     });
 
 });

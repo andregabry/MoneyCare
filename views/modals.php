@@ -75,3 +75,15 @@
         <span class="wallet_overlay_close"><i class="fas fa-times-circle"></i>fechar</span>
     </div>
 </div>
+
+<!-- MODAL MORE RECEIVE -->
+
+<article class="receive">
+    <h1>Teste de modal RECEIVE</h1>
+</article>
+
+<!-- MODAL MORE SPEND -->
+
+<article class="spend">
+    <h1>Teste de modal SPEND</h1>
+</article>
