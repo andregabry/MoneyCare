@@ -78,7 +78,7 @@ $(function () {
         var load_modals = "views/modals.php";
         var load_more = $(this).attr("data-more");
 
-        ajax(load_modals + " #" + load_more);
+        alert(load_modals + " #" + load_more);
     });
 
 });
