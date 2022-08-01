@@ -71,14 +71,20 @@ $(function () {
 
     /* MORE RECEIVE AND SPEND */
 
-    $("body").on("click", ".more", function (e){
-        e.preventDefault();
-
-        var ajax = $(".ajax");
-        var load_modals = "views/modals.php";
-        var load_more = $(this).attr("data-more");
-
-        alert(load_modals + " #" + load_more);
+    // Open modal in AJAX callback
+    $("body").on("click",".modal",function(event) {
+        event.preventDefault();
+        this.blur(); // Manually remove focus from clicked link.
+        var more_modal = $(this).attr("data-more");
+        var modals = "views/";
+        $.get(modals + more_modal + ".php", function(html) {
+            $(html).appendTo("body").modal();
+        });
+    });
+    $(".modal_close").modal({
+        escapeClose: true,
+        clickClose: true,
+        showClose: true
     });
 
 });

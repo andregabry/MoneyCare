@@ -121,7 +121,6 @@ img{
 .widget_small {
     display: block;
     width: calc(50% - 1.6em);
-    height: 100%;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     padding: 1em 2em;
@@ -133,6 +132,16 @@ img{
     display: block;
     width: 100%;
     height: 100%;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    padding: 1em 2em;
+    border-radius: var(--radius-medium);
+    margin: 0.5em 0.8em;
+}
+
+.widget_modal{
+    display: block;
+    width: 50%;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     padding: 1em 2em;

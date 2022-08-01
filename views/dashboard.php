@@ -55,10 +55,10 @@
 
     <div class="column_right">
         <div class="row">
-            <article class="more_receive widget more" data-more="app_modal_income">
+            <article class="more_receive widget modal" data-more="modal_income">
                 <p><i class="fas fa-plus-circle"></i>Receitas</p>
             </article>
-            <article class="more_spend widget more" data-more="app_modal_expense">
+            <article class="more_spend widget modal" data-more="modal_expense">
                 <p><i class="fas fa-plus-circle"></i>Despesas</p>
             </article>
         </div>
