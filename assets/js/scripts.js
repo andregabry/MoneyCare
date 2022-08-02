@@ -77,7 +77,7 @@ $(function () {
         this.blur(); // Manually remove focus from clicked link.
         var more_modal = $(this).attr("data-more");
         var modals = "views/";
-        $.get(modals + more_modal + ".php", function(html) {
+        $.load(modals + more_modal + ".php", function(html) {
             $(html).appendTo("body").modal();
         });
     });
