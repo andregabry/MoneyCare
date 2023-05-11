@@ -1,7 +1,7 @@
 <!-- MODAL MORE EXPENSE -->
 
 <div class="app_modal_box">
-    <article class="widget_modal">
+    <article class="modal_more_spend">
         <i class="modal_close fas fa-times-circle"></i>
         <p class="title icon-calendar-check-o">Nova Despesa:</p>
         <form class="app_form" action="https://www.cafecontrol.com.br/app/launch" method="post">

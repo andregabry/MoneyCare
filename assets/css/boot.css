@@ -139,7 +139,7 @@ img{
     margin: 0.5em 0.8em;
 }
 
-.widget_modal{
+.modal_more_spend{
     display: block;
     width: 50%;
     background-color: var(--color-white);
@@ -147,6 +147,7 @@ img{
     padding: 1em 2em;
     border-radius: var(--radius-medium);
     margin: 0.5em 0.8em;
+    z-index: var(--index-modal);
 }
 
 .column{

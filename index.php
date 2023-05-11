@@ -12,6 +12,7 @@
 
 <div class="background_sidebar"></div>
 <div class="ajax"></div>
+<div class="background_modal" id="background_modal"></div>
 
 <div class="app">
     <div class="app_sidebar" data-mobilemenu="close">
@@ -19,71 +20,7 @@
             <img src="assets/img/logo.svg">
             <div class="brand_icons">
                 <i class="icon_notify icon-bell-o"><small class="notify_quantity">3</small></i>
-
-                <div class="background_modal"></div>
-
-                <article class="notify">
-                    <div class="notify_header">
-                        <div class="header_icons">
-                            <i class="header_x fas fa-times"></i>
-                            <h3>Notificações</h3>
-                        </div>
-                        <i class="fas fa-envelope-open"></i>
-                    </div>
-                    <div class="notify_content">
-                        <?php for ($i = 0; $i <= 10; $i++) { ?>
-                            <div class="notify_content_message">
-                                <div class="content_avatar">
-                                    <img src="assets/img/profile.JPG">
-                                </div>
-                                <div class="content_message">
-                                    <div class="message_sender">
-                                        <h4>André Gabry</h4>
-                                    </div>
-                                    <div class="message_content">
-                                        <p>Lembrar de entrar em contato com os funcionários</p>
-                                    </div>
-                                    <div class="message_date">
-                                        <small>14 Jul, 13:25</small>
-                                    </div>
-                                </div>
-                                <div class="content_action">
-                                    <i class="content_action_circle fas fa-circle"></i>
-                                    <i class="content_action_x fas fa-times"></i>
-                                </div>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </article>
-
-
                 <i class="icon_profile far fa-user-circle"></i>
-
-
-                <article class="profile">
-                    <div class="profile_header widget_column">
-                        <div class="profile_header_avatar widget_row">
-                            <img src="assets/img/profile.JPG">
-                        </div>
-                        <div class="profile_header_content widget_row">
-                            <div class="widget_column">
-                                <h4>André Gabry</h4>
-                                <p>andre.gabry@icloud.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="profile_content widget_row">
-                        <div class="widget_column">
-                            <p><i class="far fa-user-circle"></i>Perfil</p>
-                            <p><i class="fas fa-cog"></i>Configurações</p>
-                        </div>
-                    </div>
-                    <div class="profile_footer widget_row">
-                        <p><i class="fas fa-door-open"></i>Sair</p>
-                    </div>
-                </article>
-
-
             </div>
         </div>
         <div class="sidebar_user">
@@ -114,7 +51,7 @@
             </div>
         </header>
         <main class="app_content">
-            <img class="app_content_load" src="assets/img/load.gif" alt="Carregando" title="Carregando"/>
+            <?php require __DIR__ . "/views/dashboard.php"; ?>
         </main>
     </div>
 </div>
@@ -122,6 +59,7 @@
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/highcharts.js"></script>
+<script src="assets/js/grafic.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>
